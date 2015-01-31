@@ -19,7 +19,7 @@
       "darkula-ui"
       "monokai"
     ]
-    projectHome: "/media/theodorosploumis/TPL/www"
+    projectHome: "/projects"
   metrics: false
   "exception-reporting":
     userId: "32b98da5-7ca9-4287-c8e9-d1d5ccb91b9a"
