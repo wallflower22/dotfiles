@@ -1,0 +1,68 @@
+{
+  "title": "Drupal support in Atom",
+  "name": "language-drupal",
+  "version": "0.2.0",
+  "description": "[Drupal](http://drupal.org) syntax highlighting and snippets for Atom.",
+  "keywords": [
+    "Drupal",
+    "Atom"
+  ],
+  "badges": {
+    "npm": false,
+    "david": false,
+    "daviddev": false,
+    "travis": false
+  },
+  "license": {
+    "type": "MIT"
+  },
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "homepage": "http://github.com/RobLoach/language-drupal",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RobLoach/language-drupal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RobLoach/language-drupal/issues"
+  },
+  "author": {
+    "name": "2014+ Rob Loach",
+    "url": "http://robloach.net"
+  },
+  "devDependencies": {
+    "projectz": "^0.3.13"
+  },
+  "maintainers": [
+    {
+      "name": "Rob Loach",
+      "url": "http://robloach.net"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "RobLoach",
+      "url": "https://github.com/RobLoach"
+    }
+  ],
+  "readme": "\n<!-- TITLE/ -->\n\n# Drupal support in Atom\n\n<!-- /TITLE -->\n\n\n<!-- DESCRIPTION/ -->\n\n[Drupal](http://drupal.org) syntax highlighting and snippets for Atom.\n\n<!-- /DESCRIPTION -->\n\n\n## Install\n\n1. File -> Preferences...\n2. Click on **Packages**\n3. Search for *\"Language Drupal\"*\n4. Click **Install**\n\n\n## Sources\n\n* [Drupal Sublime Snippets](https://github.com/juhasz/drupal_sublime-snippets)\n* [Atom Language PHP](https://github.com/atom/language-php)\n\n\n<!-- HISTORY/ -->\n\n## History\n[Discover the change history by heading on over to the `HISTORY.md` file.](https://github.com/RobLoach/language-drupal/blob/master/HISTORY.md#files)\n\n<!-- /HISTORY -->\n\n\n<!-- CONTRIBUTE/ -->\n\n## Contribute\n\n[Discover how you can contribute by heading on over to the `CONTRIBUTING.md` file.](https://github.com/RobLoach/language-drupal/blob/master/CONTRIBUTING.md#files)\n\n<!-- /CONTRIBUTE -->\n\n\n<!-- BACKERS/ -->\n\n## Backers\n\n### Maintainers\n\nThese amazing people are maintaining this project:\n\n- Rob Loach (http://robloach.net)\n\n### Sponsors\n\nNo sponsors yet! Will you be the first?\n\n\n\n### Contributors\n\nThese amazing people have contributed code to this project:\n\n- [RobLoach](https://github.com/RobLoach) — [view contributions](https://github.com/RobLoach/language-drupal/commits?author=RobLoach)\n\n[Become a contributor!](https://github.com/RobLoach/language-drupal/blob/master/CONTRIBUTING.md#files)\n\n<!-- /BACKERS -->\n\n\n<!-- LICENSE/ -->\n\n## License\n\nLicensed under the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT license](http://creativecommons.org/licenses/MIT/)\n\nCopyright &copy; 2014+ Rob Loach (http://robloach.net)\n\n<!-- /LICENSE -->\n\n\n",
+  "readmeFilename": "README.md",
+  "_id": "language-drupal@0.2.0",
+  "dist": {
+    "shasum": "81df75fad3e61d3fafbbb0df3902a8fb848ed517"
+  },
+  "_resolved": "/tmp/d-11505-3069-1nbxkti/package.tgz",
+  "_from": "/tmp/d-11505-3069-1nbxkti/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

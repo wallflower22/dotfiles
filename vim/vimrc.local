@@ -1,0 +1,42 @@
+let g:snips_author = 'Theodoros Ploumis <me@theodorosploumis.com>'
+let g:airline_powerline_fonts=1
+let g:spf13_no_wrapRelMotion = 1
+
+"Formatting options
+set softtabstop=2
+set tabstop=2
+set shiftwidth=2
+set expandtab "save as spaces rather than tabs"
+
+set tw=80
+set fo+=t
+set wm=0
+set linebreak
+
+"Show when I should be wrapping
+"set cc=+1
+"highlight ColorColumn ctermbg=lightgrey guibg=lightgrey"
+
+if exists('+colorcolumn')
+    set colorcolumn=80
+  else
+    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
+
+if has("autocmd")
+" Drupal *.module and *.install files.
+    augroup module
+        autocmd BufRead,BufNewFile *.module set filetype=php
+        autocmd BufRead,BufNewFile *.install set filetype=php
+        autocmd BufRead,BufNewFile *.test set filetype=php
+        autocmd BufRead,BufNewFile *.inc set filetype=php
+        autocmd BufRead,BufNewFile *.profile set filetype=php
+        autocmd BufRead,BufNewFile *.view set filetype=php
+    augroup END
+    autocmd BufNewFile,BufRead *.twig set syntax=html
+endif"
+
+" Drupal coding standards for syntastic
+let g:syntastic_phpcs_conf="--standard=DrupalCodingStandard"
+
+

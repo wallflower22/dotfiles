@@ -1,0 +1,3 @@
+" Custom Bundles
+Bundle 'git://drupalcode.org/project/vimrc.git', {'rtp': 'bundle/vim-plugin-for-drupal/'}
+Bundle 'vim-scripts/Emmet.vim'

@@ -1,0 +1,10 @@
+[7388:0131/015556:ERROR:browser_main_loop.cc(163)] Running without the SUID sandbox! See https://code.google.com/p/chromium/wiki/LinuxSUIDSandboxDevelopment for more information on developing with the sandbox on.
+ATTENTION: default value of option force_s3tc_enable overridden by environment.
+[7414:0131/015607:ERROR:sandbox_linux.cc(305)] InitializeSandbox() called with multiple threads in process gpu-process
+App load time: 7649ms
+[7427:0131/015608:INFO:renderer_main.cc(207)] Renderer process started
+[7388:0131/015629:INFO:CONSOLE(117)] "Loading Emmet extensions from", source: /home/theodorosploumis/.atom/packages/emmet/lib/emmet.coffee (117)
+[7388:0131/015629:INFO:CONSOLE(134)] "Emmet: no such extension folder:", source: /home/theodorosploumis/.atom/packages/emmet/lib/emmet.coffee (134)
+[7388:0131/015629:INFO:CONSOLE(7)] "activate linter-php", source: /home/theodorosploumis/.atom/packages/linter-php/lib/init.coffee (7)
+[7388:0131/015632:INFO:CONSOLE(71)] "Window load time: 21617ms", source: file:///opt/atom/resources/app/static/index.js (71)
+[7388:0131/020034:WARNING:message_in_transit_queue.cc(18)] Destroying nonempty message queue

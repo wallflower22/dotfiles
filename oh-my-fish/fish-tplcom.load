@@ -1,0 +1,42 @@
+
+# Basic aliases
+alias supdate "sudo apt-get update"
+alias supgrade "sudo apt-get upgrade"
+alias sinstall "sudo apt-get install"
+alias sremove "sudo apt-get remove --purge"
+alias sautoremove "sudo apt-get autoremove"
+alias reapache "sudo service apache2 restart"
+alias hosts "sudo vim /etc/hosts"
+alias show-task "ps aux | grep -i"
+
+# Aliases - folder shortcuts
+alias www "cd /var/www/"
+alias modules "cd sites/all/modules"
+alias themes "cd sites/all/themes"
+
+# Aliases - System
+alias lusers "column -nts: /etc/passwd | sort"
+alias x "exit"
+
+# Aliases VirtualBox
+alias rvms "vboxmanage list runningvms"
+alias vms "vboxmanage list vms"
+alias suspend-vm "vagrant global-status | awk '/running/{print $1}' | xargs -r -d '\n' -n 1 -- vagrant suspend"
+alias vbox-v "vboxmanage --version"
+
+# Git aliases
+alias dpull "git add .; git commit -am 'Default commit'; git push"
+
+# Aliases nfs
+alias nfs-edit "sudo vim /etc/exports"
+
+# Aliases Vim
+alias vim-update "vim +PluginInstall +BundleClean +qall"
+
+# Aliases BoxuPP
+alias box-up "sh /usr/share/boxupp/bin/startup.sh"
+alias box-d "sh /usr/share/boxupp/bin/shutdown.sh"
+
+alias fish-local "vim ~/.oh-my-fish/custom/fish-tplcom.load"
+alias fish-config "vim ~/.config/fish/config.fish"
+alias vim-local "vim ~/.vimrc.local"

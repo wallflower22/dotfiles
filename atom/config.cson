@@ -1,0 +1,50 @@
+"*":
+  core:
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "Thumbs.db"
+      ".sass-cache"
+      ".idea"
+    ]
+    disabledPackages: [
+      "metrics"
+      "autocomplete-plus"
+      "autocomplete-snippets"
+      "autocomplete-paths"
+    ]
+    themes: [
+      "darkula-ui"
+      "monokai"
+    ]
+    projectHome: "/media/theodorosploumis/TPL/www"
+  metrics: false
+  "exception-reporting":
+    userId: "32b98da5-7ca9-4287-c8e9-d1d5ccb91b9a"
+  welcome:
+    showOnStartup: false
+  drupal:
+    fileTypesPhp: "module,install,inc,test"
+  editor:
+    showInvisibles: true
+    showIndentGuide: true
+    softWrapAtPreferredLineLength: true
+    useShadowDOM: true
+    invisibles: {}
+  linter:
+    showErrorInline: true
+  "remote-sync": {}
+  "remote-edit":
+    showHiddenFiles: true
+  "Remote-FTP":
+    hideLocalWhenDisplayed: true
+".css.scss.source":
+  editor:
+    showIndentGuide: false
+    showInvisibles: false
+    softWrapAtPreferredLineLength: true
+".sass.source":
+  editor:
+    showIndentGuide: false

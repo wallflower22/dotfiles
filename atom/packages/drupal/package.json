@@ -1,0 +1,41 @@
+{
+  "name": "drupal",
+  "main": "./lib/drupal",
+  "version": "1.6.0",
+  "private": false,
+  "description": "Drupal snippets, filetypes and hotkeys",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FavishInc/atom-drupal"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {},
+  "readme": "# Drupal\n\nA starter Drupal package for the Atom editor from the lovely folks at Github.\n\nPlease create issues and pull requests for more snippets and features.\n\nTODO\n====\n* More snippets (drupal_hooks, module stubs, etc)\n* Keybinding to activate Drupal.org on hook lookups\n* Syntax highlighting for druaplisms and code style\n* Use the path to establish context and enable drush commands\n  * `drush eval` of highlighted text\n  * `drush vget` and `drush vset`\n  * `drush dl` right from the editor\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/FavishInc/atom-drupal/issues"
+  },
+  "homepage": "https://github.com/FavishInc/atom-drupal",
+  "_id": "drupal@1.6.0",
+  "dist": {
+    "shasum": "b651e5a3f62545ad930682d04c53b88aaa1b0985"
+  },
+  "_resolved": "/tmp/d-11502-20497-tnfws6/package.tgz",
+  "_from": "/tmp/d-11502-20497-tnfws6/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".coffee": [
+        "lib/drupal.coffee"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

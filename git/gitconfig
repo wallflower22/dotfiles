@@ -1,0 +1,25 @@
+[user]
+  email = me@theodorosploumis.com
+  name = TheodorosPloumis
+
+# [user]
+# Used on Drupal.org
+# email = theodorosploumis@869224.no-reply.drupal.org
+
+[core]
+  autocrlf = false
+  safecrlf = false
+  ignorecase = false
+  excludesfile = ~/.gitignore
+[branch]
+  autosetuprebase = always
+[diff]
+  renames = copies
+[color]
+  ui = true
+[alias]
+  a = apply --index
+  p = format-patch --stdout
+  push-m = push -u origin master
+  push-d = push origin dev
+  push-s = push origin stage
