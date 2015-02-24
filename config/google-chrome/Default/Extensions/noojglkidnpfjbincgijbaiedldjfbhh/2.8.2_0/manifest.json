@@ -1,0 +1,51 @@
+{
+   "background": {
+      "page": "buffer.html"
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "logo_icon_19.png",
+         "38": "logo_icon_38.png"
+      }
+   },
+   "content_scripts": [ {
+      "js": [ "data/chrome/buffer-chrome-port-wrapper.js", "data/chrome/buffer-chrome-data-wrapper.js", "data/chrome/buffer-chrome-embed.js", "data/shared/libs/jquery-2.1.1.min.js", "data/shared/libs/postmessage.js", "data/shared/libs/keymaster.js", "data/shared/buffer-overlay.js", "data/shared/embeds/buffer-scraper.js", "data/shared/embeds/buffer-hotkey.js", "data/shared/embeds/buffer-tpc-check.js", "data/shared/embeds/buffer-hover-button.js", "data/chrome/buffer-chrome.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   }, {
+      "all_frames": true,
+      "css": [ "data/shared/buffer-extension-detection.css" ],
+      "js": [ "data/chrome/buffer-chrome-port-wrapper.js", "data/chrome/buffer-chrome-embed.js", "data/shared/embeds/buffer-overlay-scraper.js", "data/shared/buffer-install-check.js", "data/shared/buffer-extension-settings.js" ],
+      "matches": [ "*://*.bufferapp.com/*" ]
+   }, {
+      "js": [ "data/shared/embeds/buffer-facebook.js" ],
+      "matches": [ "*://*.facebook.com/*" ]
+   }, {
+      "js": [ "data/shared/embeds/buffer-reddit.js" ],
+      "matches": [ "*://*.reddit.com/*" ]
+   }, {
+      "css": [ "data/shared/embeds/buffer-twitter.css" ],
+      "js": [ "data/shared/embeds/buffer-twitter.js" ],
+      "matches": [ "*://*.twitter.com/*" ]
+   }, {
+      "js": [ "data/shared/embeds/buffer-hn.js" ],
+      "matches": [ "*://*.ycombinator.org/*", "*://*.ycombinator.com/*" ]
+   }, {
+      "js": [ "data/shared/embeds/buffer-quora.js" ],
+      "matches": [ "*://*.quora.com/*" ]
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "icons": {
+      "128": "logo_icon_128.png",
+      "16": "logo_icon_small.png",
+      "48": "logo_icon_large.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCjL5DXmw1kpU8d9hpGAoDInm7oqZdkPAlicx1NePG44+Ka6mdPB9xlsepK8RaCl8UdqF/l+jHjNd0EnJVXIs5jAf/Ib3jibdnJ5WKDgvuSQULwhoehLLwUnC85zN54QZ27OucJeuKmBG3w7CTx6zpOWSrId+sWWNPq15PQyTh6nQIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "options_page": "options.html",
+   "permissions": [ "tabs", "http://*/*", "https://*/*", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.8.2",
+   "web_accessible_resources": [ "manifest.json", "data/shared/img/buffer-icon-sprite.png", "data/shared/img/twitter-sprite.png", "data/shared/img/buffer-hover-icon@1x.png", "data/shared/img/buffer-hover-icon@2x.png", "data/shared/img/white-loading-gif-small.gif", "data/shared/tpc-check.html" ]
+}

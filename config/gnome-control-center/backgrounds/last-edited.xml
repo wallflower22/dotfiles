@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper>
+    <name>Numix - Name of the Doctor 16x10</name>
+    <filename>/usr/share/backgrounds/Numix_Name_of_the_Doctor_16_10.png</filename>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#ffffff</pcolor>
+  </wallpaper>
+</wallpapers>

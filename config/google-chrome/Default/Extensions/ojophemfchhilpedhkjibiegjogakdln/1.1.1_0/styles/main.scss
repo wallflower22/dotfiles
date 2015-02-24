@@ -1,0 +1,305 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+@mixin bg-linear-gradient($colors...) {
+	background-image: -webkit-linear-gradient(top, $colors);
+	background-image:    -moz-linear-gradient(top, $colors);
+	background-image:     -ms-linear-gradient(top, $colors);
+	background-image:      -o-linear-gradient(top, $colors);
+	background-image:         linear-gradient(to bottom, $colors);
+}
+
+@mixin icon($icon) {
+	font-family: 'icomoon';
+	content: $icon;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+@mixin transition($props...) {
+	-webkit-transition: $props;
+	   -moz-transition: $props;
+	    -ms-transition: $props;
+	     -o-transition: $props;
+	        transition: $props;
+}
+
+@mixin center {
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+}
+
+@mixin shadow($inset: null) {
+	$shadow: 0 2px 2px 0 rgba(#000,0.1),0 1px 0 0 rgba(#000,0.1);
+	@if $inset {
+		box-shadow: $shadow, $shadow inset;
+	} @else {
+		box-shadow: $shadow;
+	}
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.svg#icomoon') format('svg'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[data-icon]:before {
+	@include icon(attr(data-icon));
+	margin-right: 5px;
+}
+
+.dropdown:after {
+	@include icon('\e002');
+	margin-left: 5px;
+}
+
+.checkbox:before {
+	@include icon('\e003');
+	margin-right: 10px;
+}
+
+.checkbox.checked:before {
+	content: '\e004';
+	margin-right: 10px;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Cabin', Arial;
+	color: white;
+	background-color: #e3e3e3;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.header-block {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.canvas-block {
+	@include center;
+	canvas {
+		width: 768px;
+		height: 768px;
+		margin: 80px 10px 10px 10px;
+		
+		border: solid 1px #bbb;
+		border-radius: 2px;
+		
+		background-color: white;
+
+		@include transition(width 0.5s, height 0.5s);
+		overflow: hidden;
+	}
+}
+
+header {
+	position: relative;
+	padding: 5px 1%;
+	width: 98%;
+	color: #e74c3c;
+	background-color: #fff;
+	border-top: 3px solid #e74c3c;
+	overflow: hidden;
+	@include shadow;
+
+	h1 {
+		font-family: 'Lobster', cursive;
+		font-size: 36px;
+	}
+
+	h5 {
+		font-weight: normal;
+	}
+
+	h1, h5 {
+		display: inline-block;
+		margin: 0;
+		margin-left: 5px;
+	}
+}
+
+.options {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	overflow: hidden;
+
+	button {
+		display: inline-block;
+		float: left;
+		padding: 0 5px;
+		width: 100px;
+		height: 100%;
+		border: none;
+		outline: none;
+		color: #fff;
+		-webkit-box-sizing: content-box;
+		font-family: inherit;
+		cursor: pointer;
+		@include transition(box-shadow 0.3s);
+
+		&:hover {
+			box-shadow: -1px 1px 3px 0 rgba(#000, 0.2) inset;
+		}
+
+		&:nth-child(1), &:nth-child(7) {
+			background-color: #e74c3c;
+		}
+
+		&:nth-child(2), &:nth-child(6) {
+			background-color: #E95E50;
+		}
+
+		&:nth-child(3), &:nth-child(5) {
+			background-color: #EC7063;
+		}
+
+		&:nth-child(4) {
+			background-color: #EE8277;
+		}
+	}
+}
+
+.dropdown-panel {
+	position: fixed;
+	display: none;
+	padding: 10px 0;
+	min-width: 100px;
+	background-color: white;
+	color: rgba(#000, 0.7);
+	font-size: 12px;
+	text-align: left;
+	z-index: 99;
+	@include shadow;
+
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			list-style-type: none;
+			padding: 5px 20px;
+			cursor: pointer;
+
+			&:hover {
+				color: white;
+				background-color: #EE8277;
+			}
+		}
+	}
+
+	input {
+		width: 50px;
+		border: solid 1px rgba(#000, 0.2);
+		font-size: inherit;
+		padding: 5px;
+		outline: none;
+		box-shadow: 0 0 2px 0 rgba(#000, 0.2);
+	}
+
+	input[type=color] {
+		vertical-align: middle;
+	}
+}
+
+.images {
+	position: relative;
+	display: none;
+	padding: 0;
+	width: 100%;
+	height: 120px;
+	background-color: #D04436;
+	overflow: hidden;
+	@include shadow(inset);
+
+	img {
+		height: 100px;
+		margin: 10px 5px;
+		@include shadow;
+		@include transition(-webkit-transform 0.3s);
+
+		&:hover {
+			-webkit-transform: scale(1.5, 1.5);
+		}
+	}
+}
+
+.progress {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+}
+
+#progress-bar {
+	display: none;
+	border-radius: 0 3px 3px 0;
+	height: 10px;
+	background-color: #ee5f5b;
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+	background-repeat: repeat-x;
+	background-size: 40px 40px;
+	@include transition(width 0.6s ease);
+	-webkit-animation: progress-bar-stripes 2s linear infinite;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 40px 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+.move-cursor {
+	cursor: move;
+}
+
+#img-download {
+	display: none;
+}
+
+footer {
+	font-size: 12px;
+	text-align: center;
+	color: rgba(0,0,0,0.4);
+	padding-bottom: 10px;
+}
+
+.scrollbar {
+	position: absolute;
+	padding: 0;
+	bottom: 0;
+	height: 5px;
+	background-color: rgba(#000, 0.2);
+	content: '';
+	
+	&:hover, &.active {
+		background-color: rgba(#000, 0.4);
+		cursor: default;
+	}
+}

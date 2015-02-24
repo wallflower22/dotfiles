@@ -20,5 +20,11 @@ set fish_custom $HOME/dotfiles/oh-my-fish
 # Use z.sh
 . ~/z-fish/z.fish
 
+# in ~/.config/fish/config.fish
+# # Load the default rubies
+if test -z $rvm_bin_path
+    exec bash --login -c "exec fish"
+end
 
-set -g -x fish_greeting ''
+# Remove Greeting
+set -g -x fish_greeting 'Hello Theodoros!'

@@ -1,0 +1,20 @@
+{
+   "background_page": "backgroundMeasureIt.html",
+   "browser_action": {
+      "default_icon": "off.png",
+      "default_title": "MeasureIt!"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "css": [ "styleMeasureIt.css" ],
+      "js": [ "measureIt.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "Draw out a ruler that will help you get the pixel width and height of any elements on a webpage.",
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCzblo3QehdDX50uqCh0QEv/Az9XBO6emNlmMJLfhmyRW9QAAApb7NxrBlNZBeW3IO1PDncpNPYxrB5LJw1A9Tcwdz+NoXLFIe6vxqPiZDYWjrwd0A8PEaaJFgO+43omDSHmZsZrLG4r7bl1GrjUYIWBBH5M/pqLQem2J1jTiUHSwIDAQAB",
+   "name": "MeasureIt!",
+   "permissions": [ "tabs" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.1.3"
+}

@@ -1,0 +1,20 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "description": "Adds support to the omnibox to quick lookup Drupal projects.",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "32": "icon32.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDHSP07eleDjvDxSDWAOAGNApLrSz7lv8U84/YbaWV8geYrlQD8Q34fSGHGdnOMZZgwhw3KjzSblVu8/BHPhAZL6Wci1AK40yRRl1IrxO0+raVyxPr/VgSc9jBi/VtLCdxe7YiQ+i0H8x9ffl1XG/ptuj+MwnGGtbBaRJOROd2ZGQIDAQAB",
+   "manifest_version": 2,
+   "name": "Drupal Project Lookup",
+   "omnibox": {
+      "keyword": "dpl"
+   },
+   "permissions": [ "tabs" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}

@@ -1,0 +1,483 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+/** Graph vars **/
+#blackfire-toolbar {
+    /***** Override the setting when the toolbar is on the top *****/
+    /* Because toolbar is on TOP */
+    /***** Media query *****/
+}
+#blackfire-toolbar,
+#blackfire-toolbar .blackfire-flash-message,
+#blackfire-toolbar .blackfire-toolbarreset {
+    z-index: 2147483647;
+}
+#blackfire-toolbar svg {
+    width: 25px;
+    height: 25px;
+}
+#blackfire-toolbar * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    vertical-align: middle;
+}
+#blackfire-toolbar *:not(.glyphicon) {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 13px !important;
+    color: #ffffff !important;
+}
+#blackfire-toolbar .blackfire-toolbarreset {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 50px;
+    margin: 0;
+    padding: 0 12.5px 0 0;
+    z-index: 6000000;
+    text-align: left;
+    color: #ffffff;
+    background-color: #323232;
+    bottom: 0;
+}
+#blackfire-toolbar .blackfire-toolbarreset,
+#blackfire-toolbar .blackfire-toolbarreset img {
+    width: auto;
+    display: inline;
+}
+#blackfire-toolbar .blackfire-toolbarreset abbr {
+    border-bottom: 1px dotted #000000;
+    cursor: help;
+}
+#blackfire-toolbar .blackfire-toolbarreset .hide-button,
+#blackfire-toolbar .blackfire-toolbarreset .help-button,
+#blackfire-toolbar .blackfire-toolbarreset .abort-button,
+#blackfire-toolbar .blackfire-toolbarreset .access-button {
+    display: block;
+    float: right;
+    width: 37.5px;
+    height: 50px;
+    cursor: pointer;
+}
+#blackfire-toolbar .blackfire-toolbarreset .hide-button svg,
+#blackfire-toolbar .blackfire-toolbarreset .help-button svg,
+#blackfire-toolbar .blackfire-toolbarreset .abort-button svg,
+#blackfire-toolbar .blackfire-toolbarreset .access-button svg {
+    fill: #8d8d8d;
+    transform: translate(12.5px, 12.5px);
+    -ms-transform: translate(12.5px, 12.5px);
+    /* IE 9 */
+    -webkit-transform: translate(12.5px, 12.5px);
+    /* Safari and Chrome */
+    -o-transform: translate(12.5px, 12.5px);
+    /* Opera */
+    -moz-transform: translate(12.5px, 12.5px);
+    /* Firefox */
+}
+#blackfire-toolbar .blackfire-toolbarreset .hide-button:hover svg,
+#blackfire-toolbar .blackfire-toolbarreset .help-button:hover svg,
+#blackfire-toolbar .blackfire-toolbarreset .abort-button:hover svg,
+#blackfire-toolbar .blackfire-toolbarreset .access-button:hover svg {
+    fill: #fc5d17;
+}
+#blackfire-toolbar .blackfire-toolbarreset .abort-button,
+#blackfire-toolbar .blackfire-toolbarreset .access-button {
+    margin-top: 7px;
+    width: auto;
+    height: auto;
+}
+#blackfire-toolbar .blackfire-toolbarreset .abort-button button,
+#blackfire-toolbar .blackfire-toolbarreset .access-button button {
+    background-color: #de3e38 !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    padding: 5px 6px 5px !important;
+    font-weight: bold;
+    color: white !important;
+    outline: none;
+}
+#blackfire-toolbar .blackfire-toolbarreset .abort-button button svg,
+#blackfire-toolbar .blackfire-toolbarreset .access-button button svg {
+    transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    /* IE 9 */
+    -webkit-transform: translate(0, 0);
+    /* Safari and Chrome */
+    -o-transform: translate(0, 0);
+    /* Opera */
+    -moz-transform: translate(0, 0);
+    /* Firefox */
+    margin-right: 5px;
+    fill: white !important;
+}
+#blackfire-toolbar .blackfire-toolbarreset .abort-button button:hover,
+#blackfire-toolbar .blackfire-toolbarreset .access-button button:hover {
+    background-color: #fc5d17 !important;
+}
+#blackfire-toolbar .blackfire-toolbar-block {
+    white-space: nowrap;
+    color: #ffffff;
+    display: block;
+    min-height: 50px;
+    padding: 0;
+    float: left;
+    cursor: default;
+    /** No hover */
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info-piece {
+    line-height: 19px;
+    margin-bottom: 5px;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info-piece:last-child {
+    margin-bottom: 0;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info-piece .blackfire-toolbar-status {
+    padding: 0px 5px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    vertical-align: top;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info-piece abbr {
+    color: #ffffff;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info-piece b {
+    display: inline-block;
+    width: 110px;
+    vertical-align: top;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info-with-next-pointer:after {
+    content: ' :: ';
+    color: #999;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info-with-delimiter {
+    padding-right: 5px;
+    margin-right: 5px;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info {
+    display: none;
+    max-width: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    cursor: default;
+    position: absolute;
+    background-color: #636363;
+    bottom: 50px;
+    border-radius: 4px 4px 0 0;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info .dimension-value {
+    font-weight: bold;
+    margin-left: 20px;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info .info-container {
+    padding: 15px;
+    border-radius: 0;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info .info-container hr {
+    border-color: #737373;
+    margin: 10px 0;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info .action-zone {
+    background-color: #de3e38;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info .action-zone a {
+    padding: 10px;
+    display: inline-block;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info .action-zone a svg {
+    fill: #FFFFFF;
+    width: 20px;
+    height: 20px;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info .action-zone a:first-child {
+    padding-left: 15px;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info .action-zone a:last-child {
+    padding-right: 15px;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info .action-zone a:hover {
+    background-color: #fc5d17;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info .action-zone .action-icon:not(.action-zone .action-icon:first) {
+    margin-left: 5px;
+}
+#blackfire-toolbar .blackfire-toolbar-block.blackfire-toolbar-name-block .blackfire-toolbar-info {
+    min-width: 330px !important;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info:empty {
+    visibility: hidden;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-status {
+    display: inline-block;
+    color: #fff;
+    background-color: #636363;
+    padding: 3px 6px;
+    border-radius: 3px;
+    margin-bottom: 2px;
+    vertical-align: middle;
+    min-width: 6px;
+    min-height: 13px;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-status abbr {
+    color: #ffffff;
+    border-bottom: 1px dotted black;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-status-green {
+    background-color: #759e1a;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-status-red {
+    background-color: #a33;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-status-yellow {
+    background-color: #ffcc00;
+    color: #000;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-status-black {
+    background-color: #000;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-icon {
+    display: table-cell;
+    height: 49px;
+    vertical-align: middle;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-icon > a,
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-icon > span {
+    display: inline-block;
+    font-weight: normal;
+    margin: 0;
+    padding: 0px 8px;
+    min-width: 20px;
+    text-align: center;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-icon > a[href]:after {
+    content: "";
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-icon svg {
+    fill: #8d8d8d;
+    margin: 0 12.5px;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-icon svg.cost-gain {
+    fill: #fe284b !important;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-icon svg.cost-loss {
+    fill: #7ad312 !important;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-icon svg.cost-emphasis-io {
+    fill: #6640d9 !important;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-icon svg.cost-emphasis-pmu {
+    fill: #2082a7 !important;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-icon svg.cost-emphasis-wt {
+    fill: #dc3779 !important;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-icon svg.cost-emphasis-cpu {
+    fill: #7bb301 !important;
+}
+#blackfire-toolbar .blackfire-toolbar-block a,
+#blackfire-toolbar .blackfire-toolbar-block a:link,
+#blackfire-toolbar .blackfire-toolbar-block a:hover {
+    color: #ffffff !important;
+    border: none;
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+#blackfire-toolbar .blackfire-toolbar-block a.no-decoration,
+#blackfire-toolbar .blackfire-toolbar-block a.no-decoration:link,
+#blackfire-toolbar .blackfire-toolbar-block a.no-decoration:hover {
+    text-decoration: none !important;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info-method {
+    border-bottom: 1px dashed #ccc;
+    cursor: help;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info-method[onclick=""] {
+    border-bottom: none;
+    cursor: inherit;
+}
+#blackfire-toolbar .blackfire-toolbar-block:hover,
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-block.hover {
+    position: relative;
+}
+#blackfire-toolbar .blackfire-toolbar-block:hover .blackfire-toolbar-icon {
+    background-color: #636363;
+    position: relative;
+    z-index: 10002;
+}
+#blackfire-toolbar .blackfire-toolbar-block:hover .blackfire-toolbar-icon .slot-title .unemphasis {
+    color: #333333 !important;
+}
+#blackfire-toolbar .blackfire-toolbar-block:hover .blackfire-toolbar-icon svg {
+    fill: #323232;
+}
+#blackfire-toolbar .blackfire-toolbar-block:hover .blackfire-toolbar-info {
+    display: block;
+    min-width: -webkit-calc(102%);
+    min-width: calc(102%);
+    z-index: 10001;
+    box-sizing: border-box;
+    line-height: 19px;
+}
+#blackfire-toolbar .blackfire-toolbar-block.no-hover {
+    cursor: default;
+}
+#blackfire-toolbar .blackfire-toolbar-block.no-hover:hover .blackfire-toolbar-info {
+    display: none;
+}
+#blackfire-toolbar .blackfire-toolbar-block.no-hover:hover .blackfire-toolbar-icon {
+    background-color: #323232;
+    z-index: inherit;
+}
+#blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-info {
+    top: 49px;
+    bottom: auto;
+    border-radius: 0 0 4px 4px;
+}
+#blackfire-toolbar .blackfire-toolbar-block.profiling-end-block {
+    display: none;
+}
+#blackfire-toolbar .blackfire-toolbar-block hr {
+    margin: 8px 0;
+}
+#blackfire-toolbar .blackfire-toolbarreset > div:last-of-type .blackfire-toolbar-info {
+    right: 0px;
+}
+#blackfire-toolbar .blackfire-toolbar-info-php-ext .blackfire-toolbar-status {
+    margin-left: 2px;
+}
+#blackfire-toolbar .blackfire-toolbar-info-php-ext .blackfire-toolbar-status:first-child {
+    margin-left: 0;
+}
+#blackfire-toolbar .blackfire-toolbarreset {
+    background-color: #323232;
+    top: 0;
+    bottom: auto;
+}
+@media screen and (max-width: 779px) {
+    #blackfire-toolbar .blackfire-toolbar-block .blackfire-toolbar-icon > * > :first-child ~ * {
+        display: none;
+    }
+    #blackfire-toolbar .blackfire-progress-block .blackfire-progress-container {
+        width: 100px !important;
+    }
+}
+@media screen and (max-width: 580px) {
+    #blackfire-toolbar .blackfire-progress-block .blackfire-progress-container {
+        width: 50px !important;
+    }
+}
+@media screen and (max-width: 530px) {
+    #blackfire-toolbar .blackfire-progress-block .blackfire-progress-container {
+        width: 10px !important;
+    }
+    #blackfire-toolbar .blackfire-toolbar-block.blackfire-toolbar-name-block {
+        display: none !important;
+    }
+}
+#blackfire-toolbar .blackfire-progress-block {
+    padding: 2px 20px 0;
+}
+#blackfire-toolbar .blackfire-progress-block .text-status {
+    padding: 2px 5px;
+    min-width: 60px;
+}
+#blackfire-toolbar .blackfire-progress-block .blackfire-progress-container {
+    width: 200px;
+    height: 5px;
+    background-color: #5a5a5a;
+    overflow: hidden;
+    display: inline-block;
+    border: none;
+}
+#blackfire-toolbar .blackfire-progress-block .blackfire-progress-bar {
+    background: #7ad312;
+    width: 40px;
+    height: 100%;
+}
+#blackfire-toolbar .blackfire-progress-block.errored .blackfire-progress-bar {
+    background: #fe284b;
+}
+#blackfire-toolbar .blackfire-progress-block.aborted .blackfire-progress-bar {
+    background: #24b3ee;
+}
+#blackfire-toolbar .block-title {
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#blackfire-toolbar .block-title a,
+#blackfire-toolbar .block-title span {
+    display:inline !important;
+}
+#blackfire-toolbar .slot-title * {
+    vertical-align: baseline;
+}
+#blackfire-toolbar .slot-title .unemphasis {
+    color: #7e7e7e !important;
+}
+#blackfire-toolbar .nowrap {
+    white-space: nowrap;
+}
+#blackfire-toolbar .blackfire-flash-message {
+    text-align: center;
+    background-color: #323232;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    height: 40px;
+    white-space: nowrap;
+}
+#blackfire-toolbar .blackfire-flash-message span {
+    display: inline-block;
+}
+#blackfire-toolbar .blackfire-flash-message span a {
+    vertical-align: baseline;
+}
+#blackfire-toolbar .blackfire-flash-message .content {
+    color: white;
+    font-weight: bold;
+    padding: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#blackfire-toolbar .blackfire-flash-message .help-message {
+    display:inline-block;
+}
+#blackfire-toolbar .blackfire-flash-message svg {
+    fill: white;
+}
+#blackfire-toolbar .blackfire-flash-message a,
+#blackfire-toolbar .blackfire-flash-message a:hover,
+#blackfire-toolbar .blackfire-flash-message a:link {
+    font-weight: bold;
+    color: white;
+}
+#blackfire-toolbar .blackfire-flash-message.errored {
+    background-color: #fe284b;
+    display: block;
+}
+#blackfire-toolbar .blackfire-flash-message.aborted {
+    background-color: #24b3ee;
+    display: block;
+}
+#blackfire-toolbar .blackfire-flash-message.completed {
+    background-color: #7ad312;
+}
+/*body.has-blackfire-toolbar {*/
+    /*position: absolute !important;*/
+    /*top: 50px !important;*/
+    /*right: 0px !important;*/
+    /*left: 0px !important;*/
+/*}*/
+/***** Media query print: Do not print the Toolbar. *****/
+@media print {
+    .blackfire-toolbar {
+        display: none;
+        visibility: hidden;
+    }
+}

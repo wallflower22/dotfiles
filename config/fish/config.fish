@@ -1,0 +1,1 @@
+/home/tpl/dotfiles/oh-my-fish/config.fish

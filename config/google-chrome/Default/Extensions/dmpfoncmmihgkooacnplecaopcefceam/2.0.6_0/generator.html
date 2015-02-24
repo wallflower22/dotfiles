@@ -1,0 +1,95 @@
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Lorem Ipsum Generator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+<!-- JQUERY -->
+<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<!-- // -->
+
+<script type="text/javascript" src="js/core.js"></script>
+<script type="text/javascript" src="js/select.js"></script>
+
+<script>
+
+function saveConfig()
+{
+  var myForm = document.forms['configform'];
+  var words = myForm.elements['words'].value;
+  var paragraphs = myForm.elements['paragraphs'].value;
+  
+  if (/\d+/.test(words)) localStorage["numWordsParagraphs"] = words;
+  if (/\d+/.test(paragraphs)) localStorage["numParagraphs"] = paragraphs;
+
+  alert('Configuration saved! Press OK to reload.');
+  
+  location.reload();
+}
+
+window.onload = function()
+{
+  if (!localStorage["numWordsParagraphs"]) localStorage["numWordsParagraphs"] = 120;
+  if (!localStorage["numParagraphs"]) localStorage["numParagraphs"] = 2;
+  
+  document.getElementById('words').value = localStorage["numWordsParagraphs"];
+  document.getElementById('paragraphs').value = localStorage["numParagraphs"];
+  
+  var li = new genRandomText();
+  document.getElementById('container').innerHTML = li.compileText();
+}
+
+$(document).ready(function() {
+
+	$("a#donation").fancybox({
+		'autoScale'			: true,
+		'type'				: 'iframe'
+	});
+
+});
+
+</script>
+
+</head>
+<body>
+	
+<div id="donate">
+	<a id="donation" href="donation.html">
+		<img src="images/donate.jpg" />
+	</a>
+</div>	
+
+<div id="content" class="container_12">
+
+  <div class="grid_8 rounded_corners" id="options">
+    <form action="generator.html" method="post" name="configform" onsubmit="return saveConfig()">
+      <label for="words">Words per paragraphs: </label><input type="text" name="words" id="words" />
+      <label for="paragraphs">Number of paragraphs: </label><input type="text" name="paragraphs" id="paragraphs" />
+      <input type="submit" class="submit" name="submit" value="Save settings" />
+    </form>
+  </div>
+    
+  <div class="grid_2 rounded_corners" id="generate">
+    <a href="#" id="clickRefresh" onclick="window.location.reload();">Generate again</a>
+  </div>  
+    
+  <div class="grid_2 rounded_corners" id="select">
+    <a href="#" id="clickCopy" onclick="fnSelect('container');">Select All</a>
+  </div> 
+  
+  <div class="clear"></div>
+  
+  <div class="grid_12 rounded_corners" id="container">  
+  </div>
+  
+  <div class="clear"></div>
+</div>
+</body>
+</html>

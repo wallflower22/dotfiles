@@ -1,0 +1,1 @@
+(function(){(function b(){if("complete"==document.readyState){var a=performance.timing;0!=a.loadEventEnd&&(chrome.extension.sendRequest({timing:a}),chrome.extension.sendMessage({action:"getSpeed"}))}else setTimeout(b,100)})()})();

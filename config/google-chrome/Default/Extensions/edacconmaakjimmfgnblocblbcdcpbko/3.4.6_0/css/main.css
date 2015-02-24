@@ -1,0 +1,1728 @@
+﻿html, body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-weight: 300;
+}
+
+tr > td
+{
+    padding: 0 0 5px;
+}
+
+a
+{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type="text"]
+{
+    border-radius: 2px;
+    border: 1px solid hsl(0, 0%, 77%);
+    outline: none;
+    padding: 4px 5px;
+}
+
+input[type="text"]:focus
+{
+    border-color: hsl(0, 0%, 70%);
+}
+
+input.evalSbGroupVal
+{
+    outline: none;
+    color: hsl(0, 0%, 29%);
+    border: 1px solid hsl(0, 0%, 90%); 
+    padding: 5px 9px;
+    position: absolute;
+    left: 12px;
+    top: 9px;
+    width: 220px;
+    background-color: #fff; 
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 20px; 
+    background-image: url(/images/s.png);
+    height: 20px;
+    line-height: 20px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+input.evalSbGroupVal.isTokenComponentVal {
+    background-image: url(/images/sb.png);
+}
+
+input.evalSbGroupVal.parseActiveTab {
+    background-image: none;
+}
+
+input.evalSbGroupVal:focus
+{
+    border: 1px solid hsl(0, 0%, 77%);
+}
+
+textarea
+{
+    font-size: 12px; 
+    outline: none;
+    padding: 7px;
+    color: #555;
+    background-color: hsl(0,0%, 95%);
+    border-radius: 2px;
+    border-color: hsl(0, 0%, 85%);
+}
+
+textarea:focus
+{
+    border-color: hsl(13, 0%, 67%);
+}
+
+#processSessionState{
+    background-color:hsl(0, 0%, 94%);
+    white-space: nowrap; 
+    overflow-x: hidden; 
+    overflow-y: hidden; 
+    height: 55px; 
+    position: relative;
+}
+
+#session2WindowIdx{
+    position: absolute; 
+    right: 12px; 
+    top: 13px;
+}
+
+.main
+{
+    position: absolute;
+    top: 86px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: -webkit-box;
+}
+
+.main > *
+{
+    height: 100%;
+}
+
+.resp
+{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    -webkit-user-select: none;
+}
+
+.tabDetail
+{
+    text-decoration: none;
+}
+
+.tabDetail:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.modelConfigVal
+{
+    width: 10px;
+    height: 9px;
+    padding-right: 8px;
+    opacity: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: opacity .25s linear;
+}
+
+.splitter
+{
+    -webkit-user-select: none;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    top: 0px;
+    bottom: 0px;
+    width: 11px;
+    cursor: e-resize; 
+}
+
+.setSessionTab
+{
+    cursor: col-resize;
+}
+
+#keyVal {
+    display: inline-block;
+    position: absolute; 
+    top: 5px; 
+    right: 5px; 
+    width: 13px;
+    background-size: 13px;
+    height: 11px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.evalSelTypeVal #keyVal {
+    background-image: url(/images/x2.gif);
+}
+
+.removeTabUrl #keyVal {
+    background-image: url(/images/x3.gif);
+}
+
+.val6 #keyVal {
+    background-image: url(/images/x0.gif);
+}
+
+.intendedParent #keyVal {
+    background-image: url(/images/x4.gif);
+}
+
+#finalCssClsVal:hover > #keyVal, .allowUserIntActionVal:hover > .modelConfigVal, .val1:hover > .modelConfigVal {
+    opacity: 1;
+}
+
+.compressOpts
+{
+    left: 100px;
+    padding: 0px; 
+    background: #fff; 
+    z-index: 6002;
+    transition: opacity .2s linear;
+    position: absolute;
+    border-radius: 4px; 
+    box-shadow: 0px 0px 20px hsl(0, 0%, 26%);
+    -webkit-user-select: none;
+}
+
+.getDisplayedSession
+{
+    display: none;
+    opacity: 0;
+}
+
+.iUrlVal
+{
+    display: inline-block;
+    margin-top: 6px; 
+    cursor: default;
+    font-size: 13px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.upElement
+{
+    display: inline-block;
+    cursor: default;
+}
+
+.iWindowsVal
+{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    height: 24px;
+    font-size: 13px;
+    font-weight: 300;
+    -webkit-appearance: button;
+    border-radius: 2px; 
+    background-image: url(/images/d.gif);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    border: 1px solid hsl(0,0%,92%);
+    padding-right: 26px;
+    padding-left: 6px;
+    background-color: hsl(0,0%,92%);
+    outline: none;
+}
+
+.iWindowsVal[disabled]
+{
+    background-image: url(/images/do.gif);
+}
+
+.iWindowsVal:focus, .iWindowsVal:hover
+{
+    border-color: hsl(0,0%,80%);
+}
+
+.requestTabAction
+{
+    line-height: 17px;
+    vertical-align: middle;
+    height: 50px;
+    font-size: 13px;
+    color: hsl(0,0%,76%);
+    position: relative;
+    top: -1px;
+    font-weight: 300;
+    padding-right: 10px;
+}
+
+div.panel
+{
+    display: block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%; 
+}
+
+.evalSbNm
+{
+    position: absolute;
+    top: 151px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-left: 26px;
+    margin-right: 11px;
+    padding-top: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 10px;
+    outline: none;
+}
+
+.iSelLengthVal
+{
+    color: hsl(223, 81%, 62%);
+    font-weight: 400;
+    padding-top: 60px;
+    position: absolute;
+    top: 151px;
+    right: 0px;
+    left: 0px;
+    bottom: 15px;
+    padding-left: 10px;
+    overflow: auto;
+    font-size:15px;
+    text-align: center;
+    outline: none;
+}
+
+.iFinalCssClsVal
+{
+    cursor:default;
+    padding-left: 10px;
+    padding-right: 8px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre; 
+    color: hsl(0, 0%, 18%);
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 6px;
+    line-height: 55px;
+}
+
+.alsoSelectVal
+{
+    color: hsl(0, 0%, 18%); 
+}
+
+.flashCountVal .iFinalCssClsVal {
+    font-size: 17px;
+    line-height: 57px;
+    color: hsl(0, 0%, 35%);
+}
+
+
+.iWindowId:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.txStatusVal
+{
+    line-height: 17px;
+    padding-left: 10px;
+    vertical-align: text-bottom;
+    font-size: 12px;
+    color: #60b874;
+}
+
+.val1
+{
+    display: inline-block;
+    padding-left: 1px;
+    color: black;
+    font-size: 15px;
+    margin-top: 24px;
+    margin-bottom: 11px;
+    color: hsl(0,0%,33%);
+    white-space: nowrap;
+}
+
+.flashCountVal .val1 {
+    color: hsl(0,0%,33%);
+}
+
+.sEnabled
+{
+    font-weight: bold;
+    color:#000;
+}
+
+.tabAction
+{
+    text-decoration: none;
+    padding-right: 10px;
+    font-weight: 400;
+    vertical-align: middle;
+    white-space: pre;
+}
+
+.usePStats
+{
+    text-decoration: none;
+    padding-right: 10px;
+    vertical-align: middle;
+    cursor:default;    
+}
+
+.tabAction:hover
+{
+    text-decoration: underline;
+}
+
+.allowUserIntActionVal
+{
+    display: inline-block;
+    color: #000;
+    font-size: 14px;
+    padding-left: 17px;
+}
+
+.flashCountVal .allowUserIntActionVal
+{
+    font-size: 13px;
+}
+
+.popActiveWindow
+{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.childCountVal
+{
+    width: 16px;
+    height: 12px;
+    vertical-align: middle;
+    margin-right:10px;
+}
+
+.iFirstInList
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right:4px;
+    width: 16px;
+    height: 16px;
+    background-image: url(/images/i.png);
+}
+
+.revise
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 13px;
+    width: 9px;
+    height: 16px;
+    cursor: pointer;
+    background-image: url(/images/p.gif);
+}
+
+.trackActiveSessionTab
+{
+    position: absolute;
+    top: 1px;
+    width: 16px;
+    height: 16px;
+}
+
+.registerValue2Val
+{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 9px;
+    -webkit-user-select: text;
+    color: #000;
+    text-decoration: none;
+    white-space: pre;
+}
+
+.registerValue2Val:hover
+{
+    text-decoration: underline;
+}
+
+.updateSessionConfig
+{
+    -webkit-user-select: text;
+    white-space: pre;
+    padding-left: 60px;
+    padding-top: 2px;
+    font-size: 13px;
+    color: hsl(0, 0%, 70%);
+}
+
+.footer
+{
+    vertical-align: top;
+    height: 50px;
+    font-size: 12px;
+    color: #bbb;
+}
+
+.highlight
+{
+    font-weight: bold;
+}
+
+.iConcatenateVal
+{
+    text-decoration: none;
+    line-height: 18px;
+    vertical-align: bottom;
+    color: #999;
+    cursor: default;
+}
+
+.localeListVal
+{
+    cursor: default;
+    font-size: 12px;
+}
+
+.parseScheme
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    opacity: 0;
+    transition: opacity .1s linear;
+}
+
+.iAdditiveVal
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: black;
+    z-index: 1001; 
+    opacity: .2;
+    transition: opacity .1s linear;
+}
+
+.setSessionConfig
+{
+    font-size: 11px; 
+    font-family: monospace;
+}
+
+#evalSelectedLineitemsVal::-webkit-input-placeholder
+{
+    text-align: center;
+    padding-top: 30px;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+#copyTabArray::-webkit-input-placeholder
+{
+    text-align: center;
+    padding-top: 10px;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+.assessStyleVal
+{
+    background-image: url(/images/sby.png);
+    background-repeat: no-repeat;
+    background-position: 15px 50%;
+    background-size:21px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-radius: 2px;
+    height: 34px;
+    line-height: 34px;
+    background-color: hsl(50, 90%, 78%);
+    font-size: 13px;
+    color: hsl(50, 70%, 27%);
+    padding-right: 5px;
+}
+
+.val8
+{
+    background-image: url(/images/sbr.png);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-radius: 2px;
+    height: 34px;
+    line-height: 34px;
+    background-color: hsl(0, 60%, 88%);
+    font-size: 13px;
+    color: hsl(0, 61%, 33%);
+    padding-right: 5px;
+}
+
+.iSession1
+{
+    margin-left: 5px;
+    height: 34px;
+    line-height: 34px;
+    vertical-align: top;
+    padding-right: 6px; 
+    padding-left: 36px;
+}
+
+.iSpeed
+{
+    color: #000;
+    height: 44px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    line-height: 44px;
+    font-size: 14px;
+}
+
+.flashCountVal .iSpeed {
+    color: hsl(0, 0%, 47%);
+    font-size: 13px;
+}
+
+.currentTime
+{
+    float: left;
+    padding: 0 6px;
+}
+
+.evalSClickOriginDelete
+{
+    float: right;
+    padding: 0 6px 0 40px;
+}
+
+.formatImportedSession
+{
+    white-space: nowrap;
+    padding: 2px 0px 3px;
+}
+
+.flashCountVal .formatImportedSession {
+    padding: 4px 0px 3px;
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    height: 12px;
+}
+
+textarea::-webkit-scrollbar
+{
+}
+
+.extractActiveSessionTab
+{
+    padding-right:10px;
+    padding-left:10px;
+    -webkit-user-select:auto;
+    font-size: 11px; 
+    color: hsl(0, 0%, 30%);
+    text-align:left;
+    overflow-y:auto;
+}
+
+.extractActiveSessionTab::-webkit-scrollbar
+{
+    background-color: hsl(0,0%, 100%);
+    width:12px;
+}
+
+#lnkClearSearch::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+#evalSbNm::-webkit-scrollbar
+{
+    width: 12px;
+}
+
+::-webkit-scrollbar-track-piece
+{
+    background-color: hsl(0, 0%, 93%);
+    border: 0px solid hsl(0,0%,100%);
+}
+
+textarea::-webkit-scrollbar
+{
+    width: 8px;
+    height: 8px;
+}
+
+textarea::-webkit-scrollbar-track-piece
+{
+    background-color: hsl(0,0%, 95%); 
+}
+
+.extractActiveSessionTab::-webkit-scrollbar-track-piece
+{
+    background-color: hsl(0,0%, 92%);
+}
+
+#lnkClearSearch[pp="left"]::-webkit-scrollbar-track-piece
+{
+    background-color: hsl(0, 0%, 91%);
+
+}
+
+#lnkClearSearch[pp="right"]::-webkit-scrollbar-track-piece
+{
+    background-color: hsl(0, 0%, 91%);
+}
+
+#evalSbNm::-webkit-scrollbar-track-piece
+{
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:vertical
+{
+    background-color: hsl(0, 0%, 95%);
+}
+
+textarea::-webkit-scrollbar-thumb
+{
+    display: none;
+}
+
+textarea:focus::-webkit-scrollbar-thumb
+{
+    border-radius: 0px;
+    background-color: hsl(0, 0%, 80%); 
+    border: 1px solid hsl(0,0%,80%);
+    display: inline-block;
+}
+
+.extractActiveSessionTab::-webkit-scrollbar-thumb
+{
+    background-color: hsl(0, 0%, 82%); 
+    border-radius:3px;
+    width:10px;
+    display: inline-block;
+}
+
+::-webkit-scrollbar-button, ::-webkit-scrollbar-corner {
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#lnkClearSearch[pp="right"]::-webkit-scrollbar-thumb:vertical
+{
+    cursor:pointer;
+    background-color: hsl(0, 0%, 91%);
+    border-left: 4px solid hsl(0, 0%, 91%);
+}
+
+#lnkClearSearch[pp="left"]::-webkit-scrollbar-thumb:vertical
+{
+    cursor:pointer;
+    background-color: hsl(0, 0%, 91%);
+    border-left: 4px solid hsl(0, 0%, 91%);
+}
+
+#lnkClearSearch[scrolling="5"][pp="right"]::-webkit-scrollbar-thumb:vertical
+{
+    background-color: hsl(0, 0%, 65%);
+    border-left: 4px solid hsl(0, 0%, 91%);
+}
+
+#lnkClearSearch[scrolling="5"]::-webkit-scrollbar-thumb:vertical
+{
+    background-color: hsl(0, 0%, 80%);
+    border-left: 4px solid hsl(0, 0%, 91%);
+}
+
+#evalSbNm::-webkit-scrollbar-thumb
+{
+    border-radius: 0px;
+    background-color: hsl(0,0%,87%);
+}
+
+#evalSbNm[scrolling="5"]::-webkit-scrollbar-thumb
+{
+    background-color: hsl(0, 0%, 88%);
+}
+
+#evalSbNm::-webkit-scrollbar-thumb:hover
+{
+    background-color: hsl(0,0%,75%);
+}
+
+::-webkit-scrollbar-thumb:horizontal
+{
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#lnkClearSearch::-webkit-scrollbar-thumb:horizontal
+{
+    background-color: hsl(0, 0%, 90%);
+}
+
+#activeSessionTabVal {
+    display: inline-block;
+    opacity: 0;
+    float: right; 
+    position: relative; 
+    top: 5px; 
+    right: 5px; 
+    width: 10px; 
+    height: 9px; 
+    cursor: pointer;
+    transition: opacity .25s linear;
+    background-image: url(/images/x.gif);
+}
+
+#subEls:hover > #activeSessionTabVal {
+    opacity: 1;
+}
+
+#tokenComponentVal {
+    display: inline-block;
+    opacity: 0;
+    float: right;
+    cursor: pointer; 
+    margin-right: 5px; 
+    margin-top: 11px;
+    width:13px;
+    background-size:13px;
+    height: 11px;
+    transition: opacity .3s linear;
+    background-image: url(/images/x3.gif);
+}
+
+.val8 > #tokenComponentVal {
+    background-image: url(/images/x2.gif);
+}
+
+#assessStyleVal:hover > #tokenComponentVal {
+    opacity: 1;
+}
+
+.sCtrlKey
+{
+    border-radius: 2px;
+    background-color: #fff;
+    padding: 1px 3px;
+    color: hsl(0,0%,30%);
+    display: inline-block;
+    text-align: center;
+    width: 12px;
+}
+
+.iStartCountingAtVal
+{
+    margin-left: 10px;
+}
+
+.altMsg
+{
+    margin-bottom: 6px;
+}
+
+.iAdornment
+{
+    padding-left: 5px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.iTokenDeletedCallback
+{
+    padding-left: 5px;
+    color: #aaa;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.sessionConfigHeadVal
+{
+    opacity: .5;
+}
+
+.iSessionConfig
+{
+    z-index: 0;
+    width: 100%;
+    margin-right: 0;
+    height: 8px;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.25)), to(rgba(0,0,0,0)));
+    -webkit-mask-box-image: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgba(0,0,0,0)), color-stop(0.1, rgba(0,0,0,1)), color-stop(0.90, rgba(0,0,0,1)), color-stop(1.0, rgba(0,0,0,0)));
+    transition: opacity .25s linear;
+}
+
+.restoreTypeVal
+{
+    z-index: 0;
+    width: 100%;
+    margin-right: 0;
+    height: 7px;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.17)), to(rgba(0,0,0,0)));
+    -webkit-mask-box-image: -webkit-gradient(linear, left top, right top, color-stop(0.0, rgba(0,0,0,0)), color-stop(0.1, rgba(0,0,0,1)), color-stop(0.90, rgba(0,0,0,1)), color-stop(1.0, rgba(0,0,0,0)));
+    transition: opacity .25s linear;
+}
+
+.iRemoveSessionConfigs
+{
+    z-index: 5000;
+    opacity: 1;
+    transition: opacity .15s linear;
+}
+
+input[type="checkbox"], input[type="radio"]
+{
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0;
+}
+
+input[type="radio"]:disabled, input[type="checkbox"]:disabled
+{
+    cursor: default;
+}
+
+.evalSearchTermVal
+{
+    vertical-align: middle;
+    padding-left: 8px;
+}
+
+.registerSessionTab
+{
+    color: hsl(0,0%,60%);
+    vertical-align: top;
+    padding-right: 15px;
+    text-align: right;
+}
+
+#iNumberVal
+{
+    display: inline-block;
+    text-align: center; 
+    background: #fff;
+    z-index: 500;
+    position: relative;
+    height: 100%;
+}
+
+#finalCssClsVal
+{
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 275px;
+    padding: 0 5px;
+    line-height: 39px;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    font-size: 13px;
+    vertical-align: middle;
+}
+
+#finalCssClsVal.refreshTabCache {
+    line-height: 20px;
+} 
+
+#val7 {
+    display: inline-block;
+    padding: 5px;
+}
+
+.evalSelTypeVal
+{
+    color: hsl(0, 61%, 33%);
+    background: hsl(0, 60%, 88%);
+}
+
+.removeTabUrl
+{
+    color: hsl(50, 100%, 23%);
+    background: hsl(50, 100%, 81%);
+}
+
+.val6
+{
+    color: hsl(120, 52%, 32%);
+    background: hsl(110, 65%, 83%);
+}
+
+.intendedParent
+{
+    color: hsl(223, 57%, 50%);
+    background: hsl(223, 100%, 93%);
+}
+
+.currentTimeVal
+{
+    position: absolute;
+    bottom: 4px;
+    background-color: hsl(120,45%,40%) !important;
+    padding: 1px 4px;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 11px;
+}
+
+.iPos
+{
+    right: 4px;
+}
+
+.sbTokenAddedCb
+{
+    left: 4px;
+}
+
+.requestWindowTab
+{
+    display: inline-block;
+    background: hsl(50, 97%, 78%);
+}
+
+.refreshSessionWindow
+{
+    display: inline-block;
+    background: hsl(50, 97%, 78%);
+    color: hsl(0, 0%, 52%);
+}
+
+.enableSel
+{
+    display: inline;
+    background: hsl(50, 97%, 78%); 
+    color: hsl(50, 91%, 18%);
+}
+
+.sbRegExp .updateSessionConfig
+{
+    color: hsl(226, 16%, 65%);
+}
+
+.evalSBSaveRelevant
+{
+    display: none;
+}
+
+.countTabLineItems, .addCurrentSession
+{
+    margin-top: 3px;
+}
+
+#revisionIdx {
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+#stopAnim:before {
+    position: absolute;
+    top: 15px;
+    right: -8px;
+    display: inline-block;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #ccc;
+    border-top: 7px solid transparent;
+    border-left-color: rgba(0, 0, 0, 0.2);
+    content: '';
+}
+
+#stopAnim:after {
+    position: absolute;
+    top: 15px;
+    right: -6px;
+    display: inline-block;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #fff;
+    border-top: 6px solid transparent;
+    content: '';
+}
+
+.iPropNm {
+    background-image: url(/images/cm.png);
+    background-repeat: no-repeat;
+    background-position: 8px 50%;
+    display: none;
+    top: 10px;
+    left: 11px;
+    position: absolute;
+    color: hsl(120, 52%, 30%);
+    background-color: hsl(110, 65%, 83%);
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 14px 0 31px;
+    border: 1px transparent solid;
+    border-radius: 2px;
+    font-size: 12px;
+    word-spacing: 2px;
+}
+
+.requestHonoredVal {
+    color: transparent;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    outline: none;
+    z-index: 10;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.requestHonoredVal::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.requestHonoredVal::before {
+    -webkit-user-select: none;
+    background-color: hsl(0, 0%, 97%);
+    background-color: #fff;
+    border-color: hsl(0, 0%, 85%);
+    border-color: hsl(223, 46%, 69%);
+    border-color: hsl(223, 0%, 69%);
+    border-color: #fff;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    color: hsl(0, 0%, 26%);
+    color: hsl(233, 46%, 54%);
+    color: hsl(0, 0%, 20%);
+    content: 'Select file';
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 28px;
+    line-height: 28px;
+    outline: none;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 85px;
+}
+
+.requestHonoredVal:hover::before {
+    border-color: hsl(223, 0%, 75%);
+}
+
+.requestHonoredVal:active {
+    outline: 0;
+}
+
+.requestHonoredVal:active::before {
+    outline: 0;
+    background: hsl(0, 0%, 86%);
+    border-color: hsl(0, 0%, 86%);
+}
+
+.iShowSuccessStatus {
+    z-index: 50000;
+    position: absolute;
+    top: 3px;
+    left: 90px;
+    width: 300px;
+    height: 44px;
+}
+
+.extendedSessionConfig {
+    word-spacing: 2px;
+    display: none;
+    z-index: 50001;
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    color: hsl(120, 52%, 32%);
+    background: hsl(110, 65%, 83%);
+    height: 30px;
+    line-height: 30px;
+    padding: 0 14px;
+    border-radius: 2px;
+    font-size: 12px;
+    overflow-x: hidden;
+    max-width: 278px;
+    text-align: left;
+}
+
+.inferTypes {
+    color: hsl(0, 61%, 33%);
+    background: hsl(0, 60%, 88%);
+}
+
+.evalSelectedLineitemsVal-dragover {
+    border: 2px dashed hsl(222, 30%, 43%);
+    color: hsl(0,0%, 95%);
+    padding:6px;
+}
+
+textarea.evalSelectedLineitemsVal-dragover:focus::-webkit-scrollbar-thumb
+{
+    display: none;
+}
+
+.cbOptsContainer * {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.cbOptsContainer > span > span {
+    margin: 0 0 0 5px;
+}
+
+#sessionTypeQualifier > div > span {
+    padding-left:6px;
+}
+
+#sessionTypeQualifier input {
+    position:relative;
+    top: -1px;
+}
+
+#sessionTypeQualifier > div {
+    margin-left: 16px;
+}
+
+.flashCountVal .qtip {
+    font-size: 11px;
+}
+
+.contentSepVal {
+    margin-top: 6px;
+}
+
+.iPosition {
+    margin-top: 10px;
+}
+
+.parseTabAction {
+    text-decoration: underline; 
+    color: hsl(0, 0%, 30%);
+}
+
+.sessionCreateStat {
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.sessionCreateStatDetail {
+    margin-left: 10px;
+}
+
+ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.flashCountVal {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+#brchLineitemRenderDelegate {
+    display: none; 
+    position: absolute; 
+    top: 12px; 
+    right: 13px; 
+    opacity: 0.6; 
+    cursor: pointer;
+    width: 30px;
+    height: 26px;
+    background-image: url(/images/x.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+#brchLineitemRenderDelegate:hover {
+    background-color: hsl(0, 0%, 91%);
+    opacity: 1 !important;
+}
+
+.flashCountVal #evalSbConfigs {
+    opacity:0.7;
+}
+
+.isRemoveSubheaderVal {
+    padding-left: 31px;
+    background-image: url(/images/r.gif);
+    background-repeat: no-repeat;
+    background-position-y:-89px;
+}
+
+.cfAlias {
+    background-image: url(/images/rs.gif);
+}
+
+.getActiveWindow {
+    background-image: url(/images/rc.gif);
+}
+
+.iWidthOverride {
+    background-image: url(/images/r.gif);
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+    .cfAlias {
+        background-image: url(/images/retina/rs.gif);
+        background-size: 20px;
+    }
+
+    .getActiveWindow {
+        background-image: url(/images/retina/rc.gif);
+        background-size: 20px;
+    }
+
+    .iWidthOverride {
+        background-image: url(/images/retina/r.gif);
+        background-size: 20px;
+    }
+
+}
+
+#val7 a {
+    font-weight: 400;
+    color:inherit;
+}
+
+.flashCountVal #val7 a {
+    text-decoration:underline;
+}
+
+#val7 a:hover {
+    text-decoration:underline;
+}
+
+#evalOnlyCountDupesVal {
+    text-align: right; 
+    margin-left: 12px;
+}
+
+#evalOnlyCountDupesVal, #refreshWindowCount {
+    width: 50px;
+    background-image: url(/images/sv.gif);
+    background-position-x: 50%;
+    background-position-y: -24px;
+    background-repeat: no-repeat; 
+}
+
+.isFocused #evalOnlyCountDupesVal, .isFocused #refreshWindowCount {
+    background-position-y: 6px;
+}
+
+#evalOnlyCountDupesVal[disabled], #refreshWindowCount[disabled] {
+    background-position-y: -54px;
+}
+
+#runningVal {
+    width: 50px;
+    background-image: url(/images/mba.png);
+    background-position-x: 50%;
+    background-position-y: -23px;
+    background-repeat: no-repeat; 
+}
+
+.isFocused #runningVal {
+    background-position-y: 7px;
+}
+
+#runningVal[disabled] {
+    background-position-y: -54px;
+}
+
+#headerErrVal {
+    width: 50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-left: 4px;
+    padding-right: 10px;
+    background-position-x: 50%;
+    background-position-y: -23px;
+    background-repeat: no-repeat;
+    text-align: right;
+    border-right:none;
+}
+
+.isFocused #headerErrVal, #headerErrVal.idx3Val, #headerErrVal.iFlashCount {
+    background-position-y: 7px;
+}
+
+#headerErrVal[disabled] {
+    background-position-y: -53px;
+}
+
+#headerErrVal[data-rtype="RestoreSessionIntoASingleWindow"] {
+    background-image: url(/images/rs.gif);
+}
+
+#headerErrVal[data-rtype="RestoreSessionIntoThisWindow"] {
+    background-image: url(/images/rc.gif);
+}
+
+#headerErrVal[data-rtype="RestoreSessionIntoASetOfWindows"] {
+    background-image: url(/images/r.gif);
+}
+
+#initTabLayout > .serializeSessionTransactions {
+    background-repeat:no-repeat;
+    background-position-y: 11px;
+    background-position-x: 12px;
+}
+
+#initTabLayout > .serializeSessionTransactions:hover {
+    background-position-y:-79px;
+}
+
+#syncTabLineItems {
+    background-image: url(/images/r.gif);
+}
+
+#recordDateTimeVal {
+    background-image: url(/images/rs.gif);
+}
+
+#evalSearchTermsVal {
+    background-image: url(/images/rc.gif);
+}
+
+#btnDonate {
+    background-image: url(/images/hts.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 14px;
+    margin-left: 12px;
+    margin-right:7px;
+    border-color: transparent !important;
+}
+
+#btnDonate.iTitleTextVal {
+    background-color: hsl(12, 85%, 91%);
+}
+
+#bMergeSaveElVal {
+    background-image: url(/images/cfg.png); 
+    background-position: 50% 50%; 
+    background-repeat: no-repeat; 
+    width: 16px; 
+    margin-left: 10px;
+}
+
+#appExceptionVal {
+    z-index: 301;
+    width: 16px;
+    background-image: url(/images/u.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+#rArrayVal {
+    z-index: 300;
+    width: 16px;
+    background-image: url(/images/uo.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+#iObjectVal {
+    display: inline-block;
+    margin-right: 18px;
+    margin-left: 27px;
+    width:62px;
+    height: 54px;
+    background-image: url(/images/ht.png);
+    background-size: 62px 54px;
+    vertical-align: middle;
+}
+
+#txtSortBasic {
+    display: inline-block;
+    margin:0 4px;
+    vertical-align: middle;
+    width: 15px;
+    height: 14px;
+    background-image: url(/images/sv.gif);
+    background-repeat: no-repeat;
+}
+
+#dateVal {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 25px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-image: url(/images/dso.gif);
+}
+
+#iMsg {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 14px;
+    margin-left: 12px;
+    background-image: url(/images/dso.gif);
+}
+
+#evalSbConfigs {
+    display: inline-block;
+    position:relative; 
+    top:1px;
+    width:15px;
+    height:14px;
+    background-image: url(/images/ro.png);
+}
+
+#requireMove {
+    display: inline-block;
+    position: relative; 
+    top: 4px; 
+    left: 3px;
+    width:16px;
+    background-size:16px;
+    height:16px;
+    margin-right:10px;
+    opacity: 0;
+    transition: opacity .5s linear;
+    background-image: url(/images/cm.png);
+}
+
+#normalizeImportedSession {
+    background-image: url(/images/mla.png);
+    display: inline-block;
+    width:49px;
+    background-size:49px;
+    height: 47px;
+    vertical-align:middle;
+    position: relative; 
+    top: 5px;
+}
+
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+    #btnDonate {
+        background-image: url(/images/retina/hts.png);
+        background-size: 13px;
+    }
+
+    #bMergeSaveElVal {
+        background-image: url(/images/retina/cfg.png);
+        background-size: 16px;
+    }
+
+    #appExceptionVal {
+        background-image: url(/images/retina/u.gif);
+        background-size: 14px;
+    }
+
+    #rArrayVal {
+        background-image: url(/images/retina/uo.gif);
+        background-size: 14px;
+    }
+
+    #headerErrVal[data-rtype="RestoreSessionIntoASingleWindow"] {
+        background-image: url(/images/retina/rs.gif);
+        background-size: 20px;
+    }
+
+    #headerErrVal[data-rtype="RestoreSessionIntoThisWindow"] {
+        background-image: url(/images/retina/rc.gif);
+        background-size: 20px;
+    }
+
+    #headerErrVal[data-rtype="RestoreSessionIntoASetOfWindows"] {
+        background-image: url(/images/retina/r.gif);
+        background-size: 20px;
+    }
+
+    #syncTabLineItems {
+        background-image: url(/images/retina/r.gif);
+        background-size: 20px;
+    }
+
+    #recordDateTimeVal {
+        background-image: url(/images/retina/rs.gif);
+        background-size: 20px;
+    }
+
+    #evalSearchTermsVal {
+        background-image: url(/images/retina/rc.gif);
+        background-size: 20px;
+    }
+
+    .iFirstInList {
+        background-image: url(/images/retina/i.png);
+        background-size: 16px;
+    }
+
+    .revise {
+        background-image: url(/images/retina/p.gif);
+        background-size: 9px;
+    }
+
+    #iObjectVal {
+        background-image: url(/images/retina/ht.png);
+    }
+
+    .iWindowsVal {
+        background-image: url(/images/retina/d.gif);
+        background-size: 17px;
+    }
+
+    .iWindowsVal[disabled]
+    {
+        background-image: url(/images/retina/do.gif);
+        background-size: 17px;
+    }
+
+    #txtSortBasic {
+        background-image: url(/images/retina/sv.gif);
+        background-size: 15px;
+    }
+
+    #evalOnlyCountDupesVal, #refreshWindowCount {
+        background-image: url(/images/retina/sv.gif);
+        background-size: 15px;
+    }
+
+    #dateVal {
+        background-image: url(/images/retina/dso.gif);
+        background-size: 11px;
+    }
+
+    #iMsg {
+        background-image: url(/images/retina/dso.gif);
+        background-size: 11px;
+    }
+
+    #evalSbConfigs {
+        background-image: url(/images/retina/ro.png);
+        background-size: 15px;
+    }
+
+    #activeSessionTabVal {
+        background-image: url(/images/retina/x.gif);
+        background-size: 10px;
+    }
+
+    #brchLineitemRenderDelegate {
+        background-image: url(/images/retina/x.gif);
+        background-size: 10px;
+    }
+
+    .evalSelTypeVal #keyVal {
+        background-image: url(/images/retina/x2.gif);
+    }
+
+    .removeTabUrl #keyVal {
+        background-image: url(/images/retina/x3.gif);
+    }
+
+    .val6 #keyVal {
+        background-image: url(/images/retina/x0.gif);
+    }
+
+    .intendedParent #keyVal {
+        background-image: url(/images/retina/x4.gif);
+    }
+
+     #tokenComponentVal {
+        background-image: url(/images/retina/x3.gif);
+    }
+
+    .val8 > #tokenComponentVal {
+        background-image: url(/images/retina/x2.gif);
+    }
+
+    #requireMove {
+        background-image: url(/images/retina/cm.png);
+    }
+
+    .iPropNm {
+        background-image: url(/images/retina/cm.png);
+        background-size: 16px;
+    }
+
+    #runningVal {
+        background-image: url(/images/retina/mba.png);
+        background-size: 13px;
+    }
+
+    #normalizeImportedSession {
+        background-image: url(/images/retina/mla.png);
+    }
+
+    input.evalSbGroupVal
+    {
+        background-image: url(/images/retina/s.png);
+        background-size: 21px;
+    }
+
+    input.evalSbGroupVal.isTokenComponentVal {
+        background-image: url(/images/retina/sb.png);
+        background-size: 21px;
+    }
+
+    .assessStyleVal {
+        background-image: url(/images/retina/sby.png);
+    }
+
+    .val8
+    {
+        background-image: url(/images/retina/sbr.png);
+    }
+
+}

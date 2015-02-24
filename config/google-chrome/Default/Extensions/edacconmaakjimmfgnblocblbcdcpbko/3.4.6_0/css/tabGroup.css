@@ -1,0 +1,85 @@
+﻿.evalSbSelVal
+{
+    position: relative;
+    font-size: 13px;
+    min-width: 100px;
+    -webkit-user-select: none;
+    outline: none;
+}
+
+.countTabUrls
+{
+    height:28px;
+    line-height:28px;
+    text-align:center;
+    background-color: hsl(228, 18%, 53%);
+    background-color: hsl(228, 17%, 59%);
+    background-color: hsl(228, 18%, 56%);
+    background-color: hsl(223, 30%, 43%);
+    background-color: hsl(227, 27%, 55%);
+    background-color:hsl(0, 0%, 45%);
+    background-color: hsl(223, 48%, 55%);
+    background-color: hsl(223, 75%, 61%);
+    border-radius: 2px;
+ }
+
+.saveCurrentWindow
+{
+    display: inline-block;
+    outline: 0;
+    height:28px;
+    line-height:28px;
+    text-decoration: none;
+    font-size: 100%;
+    list-style: none;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.startActionVal
+{
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    height:28px;
+    line-height:28px;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 0 5px;
+}
+
+.flashCountVal .startActionVal {
+    line-height:30px;
+}
+
+.iIdx
+{
+    background: #ffffff;
+    color: hsl(0, 0%, 11%);
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    top: 4px;
+    position: relative;
+}
+
+.flashCountVal .iIdx {
+    line-height:26px;
+}
+
+.nodeRangeVal
+{
+    display: none;
+    padding: 16px 9px 9px;
+    background: none;
+}
+
+.extractTabUrl
+{
+    display: block !important;
+}

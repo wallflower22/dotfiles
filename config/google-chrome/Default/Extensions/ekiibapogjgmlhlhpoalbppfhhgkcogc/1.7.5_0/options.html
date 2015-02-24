@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>The Green Web Options</title>
+	<link rel="stylesheet" href='/bootstrap/css/bootstrap.css'>
+	<script src="jquery.min.js"></script>
+	<script src='options.js'></script>
+</head>
+<body>
+	<div class="container">
+		<h1><img src='/images/green20x20.gif'/> The Green Web Chrome Extension</h1>
+	  	<div id='status'></div>
+	  		<div id='search' class="well">
+			<h3>The Green Web Search:</h3>
+			<p>The Green Web Search adds the different green web icons to search results for the Google, Yahoo, Bing and Ecosia search engines. <br/> Check out the <a href='http://www.thegreenwebfoundation.org/add-ons/'>addonpage</a> for information on the different icons and how it works.</p>
+			<input type='radio' name='search' id='searchon' value='0' checked='checked' />Enabled<br/>
+			<input type='radio' name='search' id='searchoff' value='1'/>Disabled<br/>
+			<br/>
+			<div class='alert'>Reload search pages for this setting to take effect. </div>
+			</div>
+			
+			<div id='alllinks' class="well">
+			<h3>The Green Web for all external links:</h3>
+			<p>The Green Web can also be used to check all extenal links on a page. All links to other domains that are greenly hosted will be green underlined. Hovering over those links will show a small popup with more information. </p>
+			<input type='radio' name='all' id='allon' value='0' checked='checked' />Enabled<br/>
+			<input type='radio' name='all' id='alloff' value='1'/>Disabled<br/>
+			</div>
+			
+			<button class='btn btn-primary'>Save</button>
+	
+	</div>
+</body>
+</html>

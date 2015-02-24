@@ -1,22 +1,24 @@
 
 # Basic aliases
-alias supdate "sudo apt-get update"
-alias supgrade "sudo apt-get upgrade"
-alias sinstall "sudo apt-get install"
-alias sremove "sudo apt-get remove --purge"
-alias sautoremove "sudo apt-get autoremove"
+alias agup "sudo apt-get update"
+alias agug "sudo apt-get upgrade"
+alias agi "sudo apt-get install"
+alias agr "sudo apt-get remove --purge"
+alias agar "sudo apt-get autoremove"
 alias reapache "sudo service apache2 restart"
 alias hosts "sudo vim /etc/hosts"
 alias show-task "ps aux | grep -i"
+alias size "du -hs"
 
 # Aliases - folder shortcuts
-alias www "cd /var/www/"
 alias modules "cd sites/all/modules"
 alias themes "cd sites/all/themes"
 
 # Aliases - System
 alias lusers "column -nts: /etc/passwd | sort"
 alias x "exit"
+alias swap "sudo gksudo leafpad /etc/sysctl.conf"
+alias skel "cp /etc/skel/.* ~/"
 
 # Aliases VirtualBox
 alias rvms "vboxmanage list runningvms"
@@ -34,9 +36,18 @@ alias nfs-edit "sudo vim /etc/exports"
 alias vim-update "vim +PluginInstall +BundleClean +qall"
 
 # Aliases BoxuPP
-alias box-up "sh /usr/share/boxupp/bin/startup.sh"
-alias box-d "sh /usr/share/boxupp/bin/shutdown.sh"
+alias box-up "sudo bash /opt/boxupp-v1.0.0/bin/startup.sh"
+alias box-down "sudo bash /opt/boxupp-v1.0.0/bin/shutdown.sh"
 
 alias fish-local "vim ~/.oh-my-fish/custom/fish-tplcom.load"
 alias fish-config "vim ~/.config/fish/config.fish"
 alias vim-local "vim ~/.vimrc.local"
+
+# Aliases live servers
+alias docean "ssh root@188.166.49.19"
+alias komotini 'ssh komotinipaper@komotinipaper.gr -t "cd public_html; bash"'
+alias tplcom "ssh tplcom@server27.cretaforce.gr"
+alias delta "ssh deltapi@server24.cretaforce.gr -t 'cd delta-pi-systems.eu/store; bash'"
+alias stuhrling "ssh watches@server24.cretaforce.gr -t 'cd stuhrling.eu/www; bash'"
+alias timexperts "ssh timexper@173.236.60.18 -t 'cd public_html/timexperts; bash'"
+

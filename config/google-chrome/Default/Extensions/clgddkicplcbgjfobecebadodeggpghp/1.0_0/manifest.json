@@ -1,0 +1,19 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "author": "Created by Gabriele Cirulli. Based on 1024 by Veewo Studio and conceptually similar to Threes by Asher Vollmer. http://git.io/2048",
+   "description": "Join the numbers and get to the 2048 tile! Careful: this game is extremely addictive!",
+   "icons": {
+      "128": "2048-128.png",
+      "16": "2048-16.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlGg9vfXR6XSmwuueikN0A6nniYRUImRoOb3piwhIYkHhwHe/AabmSosi+2hs1xafA/YPh9Oh+Bial5Bz0roZh+1CBNvujRyaHajr63ngruxIpXTbQtS/3tVgTaL0EOw5dRGQt33KWUExFVDShsz4uoj3M0K4wQFWJk8BngfB7ftse+MbSQtvIf3Uu4nMyepRI9+SzMsSbWNnQb6Iijni+fT5x6xCUgeE78K2OvhBuL8YKGfLJBx//9nfxx8hs1cflM52NKWcT08ruDwdy9uuc4aqXPHf549M3X3irLAMBPB8T44ruhjvKVA9zeVYQZV2w7QNu+sqltAzIwgMvF5dWwIDAQAB",
+   "name": "2048",
+   "offline_enabled": true,
+   "permissions": [ "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}

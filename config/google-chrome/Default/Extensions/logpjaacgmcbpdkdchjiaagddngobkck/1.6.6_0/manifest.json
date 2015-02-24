@@ -1,0 +1,23 @@
+{
+   "background": {
+      "page": "pages/background.html"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "js/mousetrap.js", "js/shortkeys.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "description": "Easily customizable keyboard shortcuts for Chrome",
+   "icons": {
+      "128": "img/icon_128.png",
+      "16": "img/icon_16.png",
+      "48": "img/icon_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC6u4Y4e3JZ0maMQaEPOAxl5B9VzCk3TRAXBVyP+kTdmEAq6edyaq4VYc90uXxeJzZPo2u8q7eZSrcHb3iqn+gEB92hjKacip8dh0LDmbZzVTiEMeYaYjNXHZuYavWZQhUmq27FFJ+J+hK4rGQ1rC6EEXZkILyeCzX2m/48mWrcIwIDAQAB",
+   "manifest_version": 2,
+   "name": "Shortkeys",
+   "options_page": "pages/options.html",
+   "permissions": [ "tabs", "clipboardWrite", "clipboardRead", "browsingData", "storage", "bookmarks", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.6.6"
+}

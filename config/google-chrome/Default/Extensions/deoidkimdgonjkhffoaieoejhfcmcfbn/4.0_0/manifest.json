@@ -1,0 +1,21 @@
+{
+   "background": {
+      "scripts": [ "o.js", "github-search.js" ]
+   },
+   "description": "Search GitHub repos",
+   "homepage_url": "https://github.com/ushis/github-search-chrome-extension",
+   "icons": {
+      "128": "icons/128.png",
+      "16": "icons/16.ico",
+      "48": "icons/48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCxIVdYmuIom8sZzjbAu5D9zT8EWurEjELme4mltIUovklGHBTiLRyqfczrvwz0ZcXwOPdOv3VUQ2IanZBs/hNqyWhSpirp6fxmFOZyR8zQqNv+vjfaXV3IxUcWgnI7I8gHmyX88OVGx+hNzBIWGLgB7YbfMElPYs1c6vzS1PwHPQIDAQAB",
+   "manifest_version": 2,
+   "name": "GitHub Search",
+   "omnibox": {
+      "keyword": "gh"
+   },
+   "permissions": [ "storage", "unlimitedStorage", "https://api.github.com/" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "4.0"
+}

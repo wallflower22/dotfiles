@@ -1,0 +1,32 @@
+{
+   "drupal_version": {
+      "description": "",
+      "message": "Wersja Drupal: "
+   },
+   "drupal_version_known_tooltip": {
+      "description": "Text on tooltip when Drupal version known.",
+      "message": "Wersja Drupal: $VERSION$.x (Kliknij, aby poznać pełny numer wersji.)",
+      "placeholders": {
+         "version": {
+            "content": "$1",
+            "example": "1.5"
+         }
+      }
+   },
+   "drupal_version_unknown_tooltip": {
+      "description": "Text on tooltip when Drupal version unknown.",
+      "message": "Kliknij, aby sprawdzić używaną wersję Drupal."
+   },
+   "extension_description": {
+      "description": "Description of extension.",
+      "message": "Sprawdź, jaką wersję Drupal wykorzystuje dana strona."
+   },
+   "hidden": {
+      "description": "",
+      "message": "Ukryta"
+   },
+   "outdated": {
+      "description": "",
+      "message": " ((nieaktualna)"
+   }
+}

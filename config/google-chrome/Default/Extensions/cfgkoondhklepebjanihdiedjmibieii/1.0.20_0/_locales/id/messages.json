@@ -1,0 +1,32 @@
+{
+   "drupal_version": {
+      "description": "",
+      "message": "Drupal Versi: "
+   },
+   "drupal_version_known_tooltip": {
+      "description": "Text on tooltip when Drupal version known.",
+      "message": "Drupal Versi: $VERSION$.x (Klik untuk mengetahui nomor versi lengkap.)",
+      "placeholders": {
+         "version": {
+            "content": "$1",
+            "example": "1.5"
+         }
+      }
+   },
+   "drupal_version_unknown_tooltip": {
+      "description": "Text on tooltip when Drupal version unknown.",
+      "message": "Klik untuk mengetahui versi Drupal yang digunakan."
+   },
+   "extension_description": {
+      "description": "Description of extension.",
+      "message": "Periksa versi Drupal yang mendukung halaman web."
+   },
+   "hidden": {
+      "description": "",
+      "message": "Tersembunyi"
+   },
+   "outdated": {
+      "description": "",
+      "message": " (Usang)"
+   }
+}

@@ -1,0 +1,18 @@
+{
+   "background_page": "background.html",
+   "description": "Adds support to the omnibox to search the Drupal API docs.",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "32": "icon32.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCqAGvU1h1RDnODBeRz13//b++JYXKCp+cogH5+jT8tlWYFBetg47TjsdUYBSjD1uQJfXKAnGA/R5aTJKjZT84PPrQn/FELis+C+sWneHxBhmcP3oKVCiDHkoLzjcTbpWKU7oe0qlCdG5zwOpHKZhv41I5ZrY/yLbCpalm/esITUQIDAQAB",
+   "name": "Drupal API Search",
+   "omnibox": {
+      "keyword": "dr"
+   },
+   "options_page": "options.html",
+   "permissions": [ "tabs" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}

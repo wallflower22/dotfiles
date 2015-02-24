@@ -1,0 +1,20 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "description": "Saves changes in CSS and JS that was made via Chrome DevTools",
+   "devtools_page": "devtools.html",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png",
+      "48": "icon_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDRWX93rVhrtZ0GEM7RTJI9pGX2Ql9NoVSvWKr6b2xGNHJJCM5BTvGF1xCqnGzrjU2Yhbf4bDcusiRz53RCRSSpC3wpATM3pLFQ6ubVgH8vVAxW5zmHCnuoZlLp0GNW5h5Jq6tFYN3yFyctFW2NXRkLtpRkCH6eqhvLWCLxzNATowIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "17",
+   "name": "DevTools Autosave",
+   "options_page": "options.html",
+   "permissions": [ "notifications", "http://*/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2.3"
+}

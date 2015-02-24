@@ -1,0 +1,19 @@
+{
+   "background_page": "background.html",
+   "browser_action": {
+      "default_icon": "images/19.png",
+      "default_title": "Lorem Ipsum Generator"
+   },
+   "description": "Creates random dummy text.",
+   "icons": {
+      "128": "images/128.png",
+      "16": "images/16.png",
+      "32": "images/32.png",
+      "48": "images/48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrkmTx3p/8EH25D1MFTE4Hm4llwA2m3CH3yBf4f7WqFczUX5/eVMIiUsUVERic+NN6vy5GAaBePeS8zCHtRRV3/1QpoFmRPr7+sBnHxMACa8mvphWjl8l2QXd4vrXIFenjwDD995UPxcYQP8vjl7hW2MAoMRj0/FTWoc4dz7qb1wIDAQAB",
+   "name": "Lorem Ipsum Generator",
+   "options_page": "generator.html",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "2.0.6"
+}

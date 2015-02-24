@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en" ng-app="popupApp" ng-csp>
+<head>
+    <meta charset="UTF-8" />
+    <title>Blackfire Companion</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+            display: none !important;
+        }
+    </style>
+    <link rel="stylesheet" href="../libs/angular-csp.css">
+</head>
+<body ng-controller="popupCtrl" ng-class="bodyClass">
+    <div class="header">
+        <div class="line" style="padding-top: 0px;">
+            <table class="headline">
+                <tr>
+                    <td class="product-name">
+                        <a href="https://blackfire.io/" target="_blank">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 302.2 85.9" enable-background="new 0 0 302.2 85.9" xml:space="preserve">
+<g>
+	<g>
+		<circle fill="#FFFFFF" cx="42.9" cy="42.9" r="42.9"/>
+		<g>
+			<path fill="#E03C31" d="M35.3,72c0.5,0.7-0.1,1.6-0.9,1.4c-14.1-1.9-24.1-22.7-11-34.7c14.5-13.3,17.8-21.2,16.1-25.4
+				c-0.2-0.6,0.3-1.1,0.8-0.9c4.8,2.4,15.7,9.6,12.1,25.2c0,0,6.3-0.1,6.5-6c0-0.6,0.7-0.8,1.1-0.5c2.7,2.5,9.4,9.7,8.5,19.2
+				C67.2,64.1,57.7,71.3,50.7,73c-0.7,0.2-1.3-0.6-0.9-1.2c2-3,5.6-9.1-1.9-15.1c-5.6-4.2-6.3-8.6-5.5-11.3c0.1-0.5-0.4-0.8-0.7-0.5
+				C27.3,57.1,32.5,68,35.3,72z"/>
+		</g>
+	</g>
+	<g>
+		<path fill="#FFFFFF" d="M131,48.9c0,10.1-4.9,14.9-13.2,14.9c-7.5,0-12.8-4.1-12.8-12.4V25.8c0-1.9,1.5-3.3,3.3-3.3
+			s3.3,1.5,3.3,3.3v10.6c1.2-1.2,3.8-2.5,6.8-2.5C126.2,34,131,38.8,131,48.9z M111.6,51.4c0,4.3,2.5,6.7,6.1,6.7
+			c4.3,0,6.6-3.1,6.6-9.2c0-6.1-2.4-9.2-6.6-9.2c-3.7,0-6.1,3.2-6.1,3.2V51.4z"/>
+		<path fill="#FFFFFF" d="M141,25.8v30.3c0,0.7,0.7,1.1,1.2,1.1c1.7,0,3.1,1.4,3.1,3.1s-1.4,3.1-3.1,3.1c-4.8,0-7.9-2.7-7.9-7.9
+			V25.8c0-1.9,1.5-3.3,3.3-3.3C139.6,22.5,141,24,141,25.8z"/>
+		<path fill="#FFFFFF" d="M152.7,42.3c-0.6,0.4-1.1,0.6-1.9,0.6c-1.6,0-2.9-1.3-2.9-2.9c0-0.7,0.2-1.4,0.8-2c1.7-1.9,4.8-4,10.1-4
+			c7.7,0,12.3,3.8,12.3,10.3v15.8c0,1.8-1.5,3.3-3.3,3.3c-1.8,0-3.3-1.5-3.3-3.3c-1.7,2.7-4.4,3.6-8.1,3.6c-6.1,0-10.1-3.8-10.1-9.3
+			c0-5.8,4.6-8.7,10-8.7h8.1v-1.1c0-2.8-2-4.6-5.6-4.6C156.2,39.9,154.3,41.2,152.7,42.3z M164.6,52.6v-1.7h-7.2
+			c-2.7,0-4.2,1.3-4.2,3.5c0,2.4,1.7,3.8,5.1,3.8C161.5,58.2,164.6,56.1,164.6,52.6z"/>
+		<path fill="#FFFFFF" d="M187.9,34c5.7,0,9,2.8,10.1,4.3c0.5,0.7,0.7,1.2,0.7,1.9c0,1.7-1.3,3-3,3c-1,0-1.7-0.4-2.3-1.1
+			c-0.8-0.9-2.4-2.4-5.5-2.4c-4.3,0-6.7,3.3-6.7,9.2c0,5.9,2.4,9.2,6.7,9.2c2.8,0,4.7-1.4,6.1-2.5c0.7-0.5,1.2-0.6,1.9-0.6
+			c1.7,0,3,1.3,3,3c0,0.9-0.3,1.6-1.1,2.3c-1.4,1.3-4.8,3.5-9.9,3.5c-8.4,0-13.4-4.8-13.4-14.9S179.5,34,187.9,34z"/>
+		<path fill="#FFFFFF" d="M220.1,62.1l-9.2-12.4l-2,1.5v8.9c0,1.9-1.5,3.2-3.3,3.2c-1.9,0-3.3-1.4-3.3-3.2V25.7
+			c0-1.9,1.4-3.2,3.3-3.2c1.9,0,3.3,1.4,3.3,3.2v18.2l11.2-8.8c0.8-0.6,1.4-0.8,2.2-0.8c1.8,0,3.2,1.4,3.2,3.2
+			c0,0.9-0.4,1.9-1.2,2.5l-8.1,6.2l9.1,11.9c0.5,0.7,0.7,1.4,0.7,2c0,1.8-1.4,3.2-3.2,3.2C221.5,63.4,220.6,62.9,220.1,62.1z"/>
+		<path fill="#FFFFFF" d="M229.9,40.4c-1.5,0-2.8-1.2-2.8-2.8c0-1.5,1.2-2.8,2.8-2.8h1.3v-3.3c0-5.8,3.8-9.4,11.8-9.4
+			c1.6,0,2.9,1.3,2.9,2.9c0,1.6-1.3,2.9-2.9,2.9c-3.4,0-5.1,1.9-5.1,4.6v2.3h4.1c1.5,0,2.8,1.2,2.8,2.8c0,1.5-1.2,2.8-2.8,2.8h-4.1
+			v19.8c0,1.9-1.5,3.2-3.3,3.2c-2,0-3.3-1.4-3.3-3.2V40.4H229.9z"/>
+		<path fill="#FFFFFF" d="M247.9,29.7c0-2.8,1.4-4,3.9-4c2.5,0,3.9,1.2,3.9,4c0,2.4-1.4,3.8-3.9,3.8C249.3,33.5,247.9,32,247.9,29.7
+			z M255.1,60.1c0,1.9-1.5,3.3-3.3,3.3c-1.9,0-3.3-1.5-3.3-3.3V38.7c0-1.9,1.5-3.3,3.3-3.3c1.9,0,3.3,1.5,3.3,3.3V60.1z"/>
+		<path fill="#FFFFFF" d="M266.2,38c1.2-2.4,4.1-4,6.7-4c1.7,0,3.2,1.4,3.2,3.2c0,1.7-1.4,3.2-3.2,3.2c-4.3,0-6.7,2.7-6.7,6.9v12.9
+			c0,1.9-1.5,3.3-3.3,3.3c-1.9,0-3.3-1.5-3.3-3.3V37.7c0-1.9,1.5-3.3,3.3-3.3c1.9,0,3.3,1.5,3.3,3.3V38z"/>
+		<path fill="#FFFFFF" d="M289.8,34c10.5,0,12.4,8,12.4,12.3c0,2.3,0,5-3.8,5h-15.3c0,4.5,3.2,6.5,7.2,6.5c2.7,0,4.6-0.9,6.1-1.9
+			c0.7-0.4,1.2-0.7,2-0.7c1.6,0,2.9,1.3,2.9,2.9c0,1-0.5,1.8-1.1,2.3c-1.1,1-4.3,3.4-10,3.4c-8.6,0-13.9-4.6-13.9-15
+			C276.5,39.3,281.4,34,289.8,34z M283.3,45.7h12.3c0-3-1.7-6-5.8-6C286.2,39.7,283.6,41.7,283.3,45.7z"/>
+	</g>
+</g>
+</svg>
+                        </a>
+                    </td>
+                    <td ng-cloak ng-if="identity" class="username">Connected as {{ identity.name }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content" style="min-height:40px;">
+            <div class="line">
+                <span class="guide">Choose a Profile Slot</span>
+                <div ng-hide="renaming === false" class="edit-form content-block ng-cloak">
+                    <form ng-submit="renameSlot()">
+                        <input ng-model="slots.current.label" placeholder="Slot name" type="text" id="profile-name">
+                        <button id="save-this-profile" type="submit">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<path d="M15.24,8.071c0.014,0.35-0.111,0.676-0.352,0.917L9.94,13.935c-0.232,0.232-0.54,0.36-0.868,0.36
+	c-0.328,0-0.636-0.128-0.868-0.36l-3.092-3.092c-0.241-0.241-0.366-0.567-0.352-0.917c0.012-0.314,0.138-0.604,0.352-0.819
+	c0.214-0.214,0.505-0.339,0.819-0.352c0.348-0.011,0.678,0.112,0.917,0.352l2.224,2.224l4.079-4.079
+	c0.24-0.24,0.573-0.365,0.917-0.352c0.314,0.013,0.604,0.138,0.819,0.352C15.102,7.466,15.227,7.757,15.24,8.071z M0.204,10
+	c0,5.402,4.395,9.796,9.796,9.796s9.796-4.395,9.796-9.796S15.402,0.204,10,0.204S0.204,4.598,0.204,10z M2.204,10
+	c0-4.299,3.497-7.796,7.796-7.796c4.299,0,7.796,3.497,7.796,7.796S14.299,17.796,10,17.796C5.701,17.796,2.204,14.299,2.204,10z"/>
+</svg>
+                            <span>Save</span>
+                        </button>
+                        <button ng-click="toggleRename($event, false)" id="cancel-this-profile">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<path d="M3.073,16.927c-3.82-3.82-3.82-10.035,0-13.854s10.035-3.82,13.854,0s3.82,10.035,0,13.854
+	S6.892,20.747,3.073,16.927z M15.513,4.487c-3.04-3.04-7.986-3.04-11.026,0s-3.04,7.986,0,11.026s7.986,3.04,11.026,0
+	S18.553,7.527,15.513,4.487z M13.387,11.822L11.565,10l1.822-1.822c0.634-0.634,0.576-1.267,0.144-1.699
+	c-0.442-0.442-1.075-0.499-1.709,0.134L10,8.435L8.168,6.603C7.535,5.97,6.911,6.037,6.469,6.479
+	C6.037,6.911,5.97,7.535,6.603,8.168L8.435,10l-1.832,1.832c-0.634,0.634-0.566,1.258-0.125,1.699
+	c0.432,0.432,1.056,0.499,1.69-0.134L10,11.565l1.822,1.822c0.634,0.634,1.267,0.576,1.699,0.144
+	C13.963,13.089,14.021,12.456,13.387,11.822z"/>
+</svg>
+                            <span>Cancel</span>
+                        </button>
+                    </form>
+                </div>
+                <div ng-hide="renaming !== false" class="select-form content-block">
+                    <select ng-options="slot.id as (slot | formatSlotLabel) group by slot.collabToken.name for slot in slots.all()" ng-change="selectSlot($event)" ng-model="slots.selectedId" ng-model-options="{ getterSetter: true }" ng-class="loadableDisabled" ng-disabled="loadableDisabled" id="slots">
+                    </select>
+                    <button ng-click="gotoProfile($event)" ng-class="loadableDisabled" ng-disabled="loadableDisabled" id="goto-this-profile" title="Open">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<path d="M13.568,11.09c0,1.245-0.484,2.414-1.364,3.293l-3.268,3.268c-0.879,0.88-2.049,1.364-3.293,1.364
+	c-2.568,0-4.658-2.089-4.658-4.657c0-1.245,0.485-2.414,1.364-3.293l1.55-1.551c0.211-0.211,0.491-0.327,0.79-0.327
+	c0.298,0,0.579,0.116,0.79,0.327c0.206,0.206,0.322,0.479,0.327,0.77c0.005,0.306-0.111,0.594-0.327,0.81l-1.55,1.55
+	c-0.458,0.458-0.71,1.066-0.71,1.713c0,1.336,1.087,2.423,2.423,2.423c0.647,0,1.256-0.252,1.714-0.71l3.268-3.268
+	c0.458-0.458,0.71-1.066,0.71-1.713c0-0.828-0.419-1.591-1.12-2.04C9.963,8.888,9.79,8.639,9.726,8.348
+	c-0.064-0.291-0.011-0.59,0.151-0.842c0.161-0.25,0.408-0.423,0.698-0.488c0.289-0.064,0.596-0.01,0.845,0.15
+	C12.765,8.032,13.568,9.497,13.568,11.09z M14.358,0.985c-1.244,0-2.414,0.485-3.293,1.365L7.796,5.617
+	C6.916,6.496,6.432,7.666,6.432,8.91c0,1.592,0.803,3.058,2.148,3.921c0.18,0.115,0.388,0.176,0.601,0.176
+	c0.082,0,0.164-0.009,0.243-0.027c0.29-0.064,0.538-0.237,0.699-0.488c0.161-0.253,0.215-0.552,0.15-0.842
+	c-0.064-0.292-0.237-0.541-0.488-0.701c-0.701-0.45-1.12-1.213-1.12-2.04c0-0.647,0.252-1.256,0.71-1.713l3.268-3.268
+	c0.458-0.458,1.066-0.71,1.713-0.71c1.336,0,2.423,1.087,2.423,2.423c0,0.647-0.252,1.256-0.71,1.713l-1.55,1.55
+	c-0.216,0.216-0.333,0.504-0.327,0.81c0.005,0.291,0.121,0.564,0.327,0.769c0.211,0.211,0.492,0.327,0.79,0.327
+	c0.299,0,0.579-0.116,0.79-0.327l1.55-1.55c0.88-0.879,1.364-2.048,1.364-3.293C19.015,3.074,16.926,0.985,14.358,0.985z"/>
+</svg>
+                        <span>Open</span>
+                    </button>
+                    <button ng-click="toggleRename($event, true)" ng-class="loadableDisabled" ng-disabled="loadableDisabled" id="edit-this-profile" title="Rename">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<path d="M19.04,3.387l-2.427-2.427c-0.183-0.184-0.429-0.285-0.691-0.285c-0.262,0-0.507,0.101-0.69,0.285
+	L6.01,10.182c-0.165,0.165-0.258,0.389-0.258,0.623v2.748c0,0.384,0.311,0.695,0.695,0.695h2.748c0.234,0,0.458-0.093,0.623-0.258
+	l9.221-9.221c0.183-0.183,0.285-0.429,0.285-0.691C19.324,3.816,19.223,3.571,19.04,3.387z M8.044,11.956v-0.704l7.878-7.878
+	l0.704,0.704l-7.878,7.878H8.044z M18.196,10.282v7.614c0,0.787-0.641,1.428-1.428,1.428H2.104c-0.788,0-1.428-0.641-1.428-1.428
+	V3.232c0-0.787,0.641-1.428,1.428-1.428h7.614c0.632,0,1.146,0.514,1.146,1.146c0,0.632-0.514,1.146-1.146,1.146h-6.75v12.936
+	h12.936v-6.75c0-0.632,0.514-1.146,1.146-1.146C17.682,9.136,18.196,9.65,18.196,10.282z"/>
+</svg>
+                        <span>Rename</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+            <a ng-class="loadableDisabled" ng-disabled="loadableDisabled" href="#" id="more-options">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<path fill="#1D1D1B" d="M19.532,12.01l-1.307-0.761c0.069-0.443,0.103-0.854,0.103-1.248c0-0.395-0.034-0.806-0.103-1.248
+	l1.308-0.761c0.82-0.478,1.103-1.538,0.629-2.364L18.84,3.319c-0.306-0.535-0.878-0.868-1.493-0.868
+	c-0.301,0-0.599,0.081-0.861,0.233l-1.321,0.769c-0.667-0.538-1.38-0.96-2.124-1.258V1.341c0-0.955-0.772-1.732-1.721-1.732H8.679
+	c-0.949,0-1.721,0.777-1.721,1.732v0.854c-0.744,0.298-1.456,0.72-2.124,1.258L3.513,2.684C3.251,2.532,2.954,2.451,2.653,2.451
+	c-0.614,0-1.186,0.332-1.493,0.868l-1.321,2.307C-0.634,6.452-0.352,7.513,0.468,7.99l1.308,0.761C1.707,9.195,1.673,9.605,1.673,10
+	c0,0.395,0.034,0.805,0.103,1.248L0.468,12.01c-0.82,0.477-1.102,1.538-0.629,2.364l1.321,2.308
+	c0.306,0.535,0.878,0.867,1.493,0.867c0.301,0,0.599-0.081,0.861-0.233l1.321-0.769c0.667,0.538,1.379,0.96,2.124,1.258v0.854
+	c0,0.955,0.772,1.732,1.721,1.732h2.642c0.949,0,1.721-0.777,1.721-1.732v-0.854c0.744-0.298,1.456-0.72,2.124-1.258l1.321,0.769
+	c0.262,0.152,0.559,0.233,0.861,0.233c0.614,0,1.186-0.332,1.493-0.867l1.321-2.307C20.634,13.548,20.352,12.487,19.532,12.01z
+	 M8.759,16.135c-1.302-0.267-2.509-0.971-3.4-1.985l-0.217-0.247l-2.12,1.234c-0.123,0.072-0.284,0.026-0.354-0.097l-0.661-1.154
+	c-0.073-0.128-0.03-0.292,0.096-0.365l2.123-1.236l-0.102-0.308C3.905,11.315,3.794,10.65,3.794,10c0-0.65,0.111-1.315,0.331-1.977
+	l0.102-0.308L2.103,6.478C1.977,6.405,1.934,6.241,2.008,6.113l0.66-1.154C2.738,4.837,2.9,4.791,3.022,4.862l2.12,1.234
+	l0.217-0.247c0.891-1.013,2.098-1.718,3.4-1.985l0.32-0.066V2.007c0-0.147,0.117-0.266,0.261-0.266h1.321
+	c0.144,0,0.261,0.119,0.261,0.266v1.792l0.32,0.066c1.302,0.267,2.509,0.971,3.4,1.985l0.217,0.247l2.12-1.234
+	c0.122-0.071,0.285-0.024,0.354,0.097l0.661,1.154c0.073,0.128,0.03,0.292-0.096,0.365l-2.123,1.236l0.102,0.308
+	C16.095,8.685,16.206,9.35,16.206,10c0,0.65-0.111,1.315-0.331,1.977l-0.102,0.308l2.123,1.236c0.126,0.073,0.169,0.237,0.096,0.365
+	l-0.661,1.154c-0.07,0.123-0.23,0.169-0.354,0.097l-2.12-1.234l-0.217,0.247c-0.891,1.013-2.098,1.718-3.4,1.985l-0.32,0.066v1.792
+	c0,0.147-0.117,0.266-0.261,0.266H9.339c-0.144,0-0.261-0.119-0.261-0.266v-1.792L8.759,16.135z M13.703,10
+	c0-2.057-1.661-3.731-3.703-3.731S6.297,7.943,6.297,10c0,2.057,1.661,3.73,3.703,3.73S13.703,12.057,13.703,10z M11.582,10
+	c0,0.881-0.71,1.598-1.582,1.598c-0.872,0-1.582-0.717-1.582-1.598c0-0.881,0.71-1.598,1.582-1.598
+	C10.872,8.402,11.582,9.119,11.582,10z"/>
+</svg>
+                <span>Profiling Options</span>
+            </a>
+        </div>
+        <div class="line" id="profiling-options" style="display: none;margin-top:15px;">
+            <div ng-if="credentials.is_alpha" class="option-line alpha-feature alpha-feature-disablable">
+                <label>
+                    <input ng-model="options.flag_fn_args" ng-true-value="1" ng-false-value="0" type="checkbox" value="fn_args" name="profile_options[]" id="option_enable_fn_args"/> Enable Fn Args
+                    <span class="note-info">
+                        Enable Fn Args data collection
+                    </span>
+                </label>
+            </div>
+            <div ng-if="credentials.is_alpha" class="option-line alpha-feature alpha-feature-disablable">
+                <label>
+                    <input ng-model="options.flag_pdo" ng-true-value="1" ng-false-value="0" type="checkbox" value="pdo" name="profile_options[]" id="option_enable_pdo"/> Enable PDO
+                    <span class="note-info">
+                        Enable PDO data collection
+                    </span>
+                </label>
+            </div>
+            <div ng-if="credentials.is_alpha" class="option-line alpha-feature alpha-feature-disablable">
+                <label>
+                    <input ng-model="options.flag_objects" ng-true-value="1" ng-false-value="0" type="checkbox" value="objects" name="profile_options[]" id="option_enable_objects"/> Enable Objects
+                    <span class="note-info">
+                        Enable object creation data collection
+                    </span>
+                </label>
+            </div>
+            <div ng-if="credentials.is_alpha" class="option-line alpha-feature alpha-feature-disablable">
+                <label>
+                    <input ng-model="options.flag_refs" ng-true-value="1" ng-false-value="0" type="checkbox" value="refs" name="profile_options[]" id="option_enable_refs"/> Enable References
+                    <span class="note-info">
+                        Enable reference mismatch data collection
+                    </span>
+                </label>
+            </div>
+            <div ng-if="credentials.is_alpha" class="option-line alpha-feature alpha-feature-disablable">
+                <label>
+                    <input ng-model="options.flag_php_errors" ng-true-value="1" ng-false-value="0" type="checkbox" value="errors" name="profile_options[]" id="option_enable_php_errors"/> Enable PHP Errors
+                    <span class="note-info">
+                        Enable error handler data gathering
+                    </span>
+                </label>
+            </div>
+            <div class="option-line">
+                <label ng-class="{'disabled-label': profiling_mode ==='next'}">
+                    <input ng-disabled="profiling_mode ==='next'" ng-model="options.aggreg_samples" ng-true-value="1" ng-false-value="10" type="checkbox" name="single_trace" id="single_trace"/> Disable aggregation
+                    <span class="note-info">
+                        The Profiler makes several requests and averages the results; disable
+                        this behavior when the page has side-effects.
+                    </span>
+                </label>
+            </div>
+            <div class="option-line">
+                <label>
+                    <input ng-change="profilingModeChanged($event)" ng-model="profiling_mode" ng-true-value="'next'" ng-false-value="'standard'" name="trigger_on_next_request" type="checkbox" id="trigger_on_next_request"/> Profile next request
+                    <span class="note-info">
+                        The Profiler works on the current page; use this option to profile the very next request.
+                    </span>
+                </label>
+                <label ng-hide="profiling_mode !== 'next'" style="display:block;margin-left: 22px;" id="trigger_on_next_request_type">
+                    Waiting scope
+                    <select ng-model="options.wait_scope" name="trigger_on_next_request_type">
+                        <option value="">All</option>
+                        <option value="main_frame">Browser main frame</option>
+                        <option value="xmlhttprequest">XMLHttp Request</option>
+                        <option value="sub_frame">Sub Frames (Iframe)</option>
+                        <option value="stylesheet">Stylesheets</option>
+                        <option value="script">Scripts</option>
+                        <option value="image">Images</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <div class="line" style="margin:20px 0 30px;">
+            <div ng-if="profiling.status === 'ready'" class="profile-button">
+                <div ng-if="!(tab|isProfilable)" class="non-profilable ng-cloak">
+                    This tab is not profilable,<br/>only http and https scheme are handled.
+                </div>
+                <button ng-click="profileCurrentTab($event)" ng-class="loadableDisabled" ng-disabled="loadableDisabled || !(tab|isProfilable)" id="profile-this" tabindex="-1">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 800" enable-background="new 0 0 800 800" xml:space="preserve">
+<path d="M400,36C200,36,36,200,36,400s164,364,364,364s364-164,364-364C764,196,600,36,400,36z M616,464
+	c-12,116-92,180-152,192c-4,0-12-4-8-12c16-24,48-76-16-128c-48-36-52-72-48-96c0-4-4-8-4-4c-124,104-80,196-56,232c4,4,0,12-8,12
+	c-120-16-204-192-92-296c124-112,152-180,136-216c0-4,4-8,8-8c40,20,132,80,104,216c0,0,52,0,56-52c0-4,4-8,8-4
+	C568,320,624,380,616,464z"/>
+</svg>
+                    <span>Profile!</span>
+                </button>
+            </div>
+            <div ng-cloak ng-if="profiling.status !== 'ready'" class="profile-running">
+                <table>
+                    <tr>
+                        <td style="vertical-align: bottom;">
+                            <span class="status" ng-bind-html="profiling.statusHTML"></span>
+                            <span ng-if="profiling.status === 'profiling'" class="percentage">
+                                {{ profiling.percentage }}%
+                            </span>
+                            <div class="progress-bar-container" style="margin-top:4px;width:200px;height:5px;background-color: #d1d1d1;">
+                                <div class="progress-bar" style="width:{{ profiling.percentage }}%;background-color: #7ad312;height: 5px;">
+
+                                </div>
+                            </div>
+                        </td>
+                        <td style="text-align: right;">
+                            <button ng-click="abortProfile($event)" id="abort-this-profile" title="Abort">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<path d="M3.073,16.927c-3.82-3.82-3.82-10.035,0-13.854s10.035-3.82,13.854,0s3.82,10.035,0,13.854
+	S6.892,20.747,3.073,16.927z M15.513,4.487c-3.04-3.04-7.986-3.04-11.026,0s-3.04,7.986,0,11.026s7.986,3.04,11.026,0
+	S18.553,7.527,15.513,4.487z M13.387,11.822L11.565,10l1.822-1.822c0.634-0.634,0.576-1.267,0.144-1.699
+	c-0.442-0.442-1.075-0.499-1.709,0.134L10,8.435L8.168,6.603C7.535,5.97,6.911,6.037,6.469,6.479
+	C6.037,6.911,5.97,7.535,6.603,8.168L8.435,10l-1.832,1.832c-0.634,0.634-0.566,1.258-0.125,1.699
+	c0.432,0.432,1.056,0.499,1.69-0.134L10,11.565l1.822,1.822c0.634,0.634,1.267,0.576,1.699,0.144
+	C13.963,13.089,14.021,12.456,13.387,11.822z"/>
+</svg>
+                                <span>Abort</span>
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div ng-if="alert.message" class="alerts">
+            <div ng-class="alert.classname" style="position:relative;">
+                <div ng-bind-html="alert.message"></div>
+                <div ng-if="alert.closable" ng-click="removeAlert($event)" class="closer">x</div>
+            </div>
+        </div>
+        <div class="line infos">
+            <span>Blackfire Companion</span>
+            <span id="version" ng-cloak>{{ version }}</span>
+            <span ng-if="credentials.is_alpha" class="alpha-feature" style="color:#444;"> + alpha features</span>
+            <span> - </span><a href="https://blackfire.io/doc/troubleshooting" target="_blank">Troubleshooting</a>
+        </div>
+        <script src="libs/raven.js"></script>
+        <script src="libs/raven-jquery.js"></script>
+        <script src="js/config.js"></script>
+        <script src="js/raven-client.js"></script>
+        <script src="js/filters/filters.js"></script>
+        <script src="libs/jquery.js"></script>
+        <script src="libs/q.js"></script>
+        <script src="js/deferred.js"></script>
+        <script src="js/storage.js"></script>
+        <script src="js/debug.js"></script>
+        <script src="js/chrome.js"></script>
+        <script src="js/errorHandling.js"></script>
+        <script src="js/currentTab.js"></script>
+        <script src="js/api.js"></script>
+        <script src="libs/angular.js"></script>
+        <script src="js/main/main.js"></script>
+            </div>
+</body>
+</html>

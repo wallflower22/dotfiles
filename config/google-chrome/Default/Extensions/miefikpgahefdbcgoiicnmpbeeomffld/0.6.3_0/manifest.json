@@ -1,0 +1,29 @@
+{
+   "author": "Sensiolabs",
+   "background": {
+      "scripts": [ "libs/raven.js", "libs/raven-jquery.js", "js/config.js", "js/raven-client.js", "libs/q.js", "libs/jquery.js", "libs/event-emitter2.js", "js/deferred.js", "js/storage.js", "js/debug.js", "js/api.js", "js/toolbar.js", "js/chrome.js", "js/currentTab.js", "js/errorHandling.js", "js/httpHeaders.js", "js/listenerManager.js", "js/messageStorage.js", "js/requester.js", "js/ip.js", "js/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "img/icon_enabled.png",
+      "default_popup": "main.html",
+      "default_title": "Blackfire Companion"
+   },
+   "description": "Create profiles from your web pages.",
+   "externally_connectable": {
+      "matches": [ "https://blackfire.io/*", "https://profiler.sensiolabs.com/*" ]
+   },
+   "homepage_url": "https://blackfire.io/",
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "48": "img/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn9MtwA173psUVWAlGHOai7y3IpJRyuYJrM0ZwqzbTMixnSTFRuYPPthqAjVT3EzzGk5KS0tCCuX8MQLaRKT1bYn6y/iGahDSx6s2/KplnpZ/PkEIaXZA3Vlf4jqjKDkIhpOfbYJMa5eEcO7Q3mO8hYAOCZ3sCL0JbudO3OevY8JnMzYYizAjvlpiQVztrUYIy6UWVy0UhI/jNkiFnlLchK4SmluiJ2IANlncwmWGLR5QVZyl3tkov6fl7JfVdFE/5yIkzGumKTgQGMON2YBs5HpF7fU0J9AMXDQrF5t0TbFeXMkt+MNGytFlIwemg6Kt61FYg0GEqPLwzr1XnJlcOQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "26",
+   "name": "Blackfire Companion",
+   "permissions": [ "webRequest", "webRequestBlocking", "http://*/", "https://*/", "storage", "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.6.3",
+   "web_accessible_resources": [ "toolbar/toolbar.html" ]
+}

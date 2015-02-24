@@ -1,0 +1,89 @@
+@import "960.css";
+@import "reset.css";
+
+/* General */
+
+#donate
+{
+	display:scroll;
+	position:fixed;
+	top: 200px;
+}
+
+body {
+  font: 13px arial;
+  background: #d1e1e1 url('../images/background.jpg') repeat-x center top;
+}
+
+.debug {
+  background: url('../images/12_col.gif') repeat-y;
+}
+
+#content {
+  margin: 10px auto;
+}
+
+.rounded_corners {
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+}
+
+/* Options */
+
+div#options {
+  background-color: #398595;
+}
+
+#generate, #select {
+  font-size: 14px;
+  background-color: #214c55;
+	line-height: 42px;
+}
+
+a:link, a:active, a:visited {
+  display: block;
+  color: white;
+  padding: auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+form {
+  padding: 8px 0px;  
+}
+
+label {
+  color: white;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+input {
+  width: 40px;
+  border: 2px solid #214c55;
+}
+
+.submit {
+  width: auto;
+  padding: 3px;
+  border: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #214c55;
+  margin-left: 30px;
+  color: white;
+}
+
+/* Paragraphs && Content */
+
+p {
+  margin-bottom: 10px;
+}
+
+div#container {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 920px;
+  padding: 10px;
+  background-color: white;
+}

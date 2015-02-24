@@ -1,0 +1,18 @@
+VirtualBox GUI VM Selector Window 4.3.22 r98236 linux.amd64 (Feb 12 2015 16:31:54) release log
+00:00:17.101781 Log opened 2015-02-19T22:48:09.301206000Z
+00:00:17.101783 Build Type: release
+00:00:17.101787 OS Product: Linux
+00:00:17.101788 OS Release: 3.13.0-45-generic
+00:00:17.101790 OS Version: #74-Ubuntu SMP Tue Jan 13 19:36:28 UTC 2015
+00:00:17.101832 DMI Product Name: Satellite L550
+00:00:17.101845 DMI Product Version: PSLWSE-00F009GE
+00:00:17.102547 Host RAM: 7846MB total, 2941MB available
+00:00:17.102553 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:17.102554 Process ID: 14556
+00:00:17.102555 Package type: LINUX_64BITS_UBUNTU_13_04
+00:00:17.950166 UIMediumEnumerator: Medium-enumeration started...
+00:00:23.740467 UIMediumEnumerator: Medium-enumeration finished!
+00:00:24.823027 Failed to open "/dev/vboxdrv", errno=13, rc=VERR_VM_DRIVER_NOT_ACCESSIBLE
+00:00:35.569555 2D support test succeeded
+00:00:35.577117 UIMediumEnumerator: Medium-enumeration started...
+00:00:35.942395 UIMediumEnumerator: Medium-enumeration finished!

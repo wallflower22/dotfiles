@@ -1,0 +1,22 @@
+{
+   "background_page": "background.html",
+   "content_scripts": [ {
+      "js": [ "scripts/jquery.js", "scripts/client_script.js" ],
+      "matches": [ "http://*/*" ]
+   } ],
+   "description": "Provides Drupal specific debugging information for chrome.",
+   "icons": {
+      "128": "images/icon128.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC4VWNuCx+ctYg0gr6BM8C6RTT5xjfeq5cua24Hh1kFWC4R+zftO8zkKF2ZZ4Hr0PINV608OMQGf0+dfxn2IRdFi4RHi/610Qtj5Ql1uWe5kQWIfM68b7A9NQLwhV9o77s5uu5DH7WWur5dFiqykKYgyxf2QWDuMpEdn7pSUYWnEwIDAQAB",
+   "name": "Drupal for Chrome",
+   "page_action": {
+      "default_icon": "images/icon19.png",
+      "default_popup": "popup.html",
+      "default_title": "Drupal for Chrome Enabled"
+   },
+   "permissions": [ "tabs" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "0.4"
+}

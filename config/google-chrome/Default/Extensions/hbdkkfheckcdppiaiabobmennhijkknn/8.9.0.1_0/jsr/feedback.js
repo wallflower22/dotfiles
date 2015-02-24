@@ -1,0 +1,1 @@
+document.write('<scr'+'ipt type="text/javascript" src="https://cdn.extensionanalytics.com/feedback.js"></sc'+'ript>');

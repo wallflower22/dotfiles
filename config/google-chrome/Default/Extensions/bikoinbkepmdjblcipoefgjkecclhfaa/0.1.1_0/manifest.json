@@ -1,0 +1,20 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "description": "Chrome extension to perform actions on Drupal portal.",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "32": "icon32.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC7KL4GnEVykBQtkDS1ZAM79tYX9grYEV2CRCZxalmkYuONphBOJFucSb9soKpo4w+L8vMG7LIWtomy+XL44wKc9QvxI0mHsFBLrmRE8/Ror6+GG5quQJiy1ya7j4ZWS4JF5hISYi21bbm0/gac6tCJTP5rUEEk2sdVcwZHNSFR5wIDAQAB",
+   "manifest_version": 2,
+   "name": "Dhrome",
+   "omnibox": {
+      "keyword": "dpl"
+   },
+   "permissions": [ "tabs" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "0.1.1"
+}

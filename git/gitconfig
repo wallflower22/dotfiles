@@ -11,6 +11,10 @@
   safecrlf = false
   ignorecase = false
   excludesfile = ~/.gitignore
+
+[push]
+  default = simple
+
 [branch]
   autosetuprebase = always
 [diff]

@@ -1,0 +1,29 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "content-script.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_idle"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_extension_description__",
+   "homepage_url": "http://www.whitefirdesign.com/drupal-version-check?pk_campaign=DVC-Chrome",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDLF7BbDQyAJmZett9CttXX5j+6X9xWhQJVVOjx5cxfvVkW5gM3YSdEdMHBdWJSKS75ZOOo056DTOA8to7qmmp7+FKUtJmQ67kr8u5WbQdiObOsno42j6cBZZRUdkCAP4OtfssUfjHXRod2QZByDaulno9z/OBD9DjTjfzeKVnB2wIDAQAB",
+   "manifest_version": 2,
+   "name": "Drupal Version Check",
+   "offline_enabled": true,
+   "page_action": {
+      "default_title": "Drupal Version Check"
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.20"
+}

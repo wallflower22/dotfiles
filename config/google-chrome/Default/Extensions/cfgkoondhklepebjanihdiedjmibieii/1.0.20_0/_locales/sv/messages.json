@@ -1,0 +1,32 @@
+{
+   "drupal_version": {
+      "description": "",
+      "message": "Drupal version: "
+   },
+   "drupal_version_known_tooltip": {
+      "description": "Text on tooltip when Drupal version known.",
+      "message": "Drupal version: $VERSION$.x (Klicka för att få reda på det fullständiga versionsnumret.)",
+      "placeholders": {
+         "version": {
+            "content": "$1",
+            "example": "1.5"
+         }
+      }
+   },
+   "drupal_version_unknown_tooltip": {
+      "description": "Text on tooltip when Drupal version unknown.",
+      "message": "Klicka för att ta reda på vilken Drupal-version som används."
+   },
+   "extension_description": {
+      "description": "Description of extension.",
+      "message": "Kontrollera vilken version av Drupal en viss webbsida använder."
+   },
+   "hidden": {
+      "description": "",
+      "message": "Dold"
+   },
+   "outdated": {
+      "description": "",
+      "message": " (ogiltig)"
+   }
+}

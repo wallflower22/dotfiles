@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>PinCo - Pin Collage Creator for Pinterest</title>
+        <!-- build:css styles/app.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+		<!-- build:css styles/spectrum.css -->
+		<link rel="stylesheet" href="styles/spectrum.css">
+		<!-- endbuild -->
+        <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css" />
+        <link href="http://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css" />
+		<script src="scripts/tracking.js"></script>
+    </head>
+    <body>
+        <!--div id="fb-root"></div>
+        <script src="scripts/fb.js"></script>
+        <script src="scripts/fb2.js"></script-->
+        <div class="header-block">
+            <header>
+                <h1>PinCo.</h1>
+                <h5>The Only <a href="http://pinterest.com" class="tracked" target="_blank">Pinterest&trade;</a> Collage Creator</h5>
+				<!--div class="fb-like" data-href="http://pin-collage.com" data-send="true" data-width="600" data-show-faces="true" data-font="segoe ui"></div-->
+                <section class="options">
+                    <button id="download" class="tracked" data-icon="&#xe000;">Download</button>
+                    <button id="reorder" class="tracked" data-icon="&#xe001;">Reorder</button>
+                    <button class="dropdown" class="tracked" data-target="canvas-ctrl">Canvas Size</button>
+                    <button class="dropdown tracked" data-target="tile-ctrl">Tile Size</button>
+                    <button class="dropdown tracked" data-target="borders-ctrl">Borders</button>
+                    <button class="dropdown tracked" data-target="filters-ctrl">Filters</button>
+                    <button id="browse">Browse Images</button>
+                    <div id="canvas-ctrl" class="dropdown-panel">
+                        <ul data-group="canvas">
+                            <li><span class="checkbox tracked" data-value="small">Small Canvas 6x6</span></li>
+                            <li><span class="checkbox checked tracked" data-value="medium">Medium Canvas 6x6</span></li>
+                            <li><span class="checkbox tracked" data-value="wide">Wide Canvas 12x6</span></li>
+                            <li><span class="checkbox tracked" data-value="huge">Huge Canvas 12x8</span></li>
+                            <li><span class="checkbox tracked" data-value="giant">Giant Canvas 16x10</span></li>
+                        </ul>
+                    </div>
+                    <div id="tile-ctrl" class="dropdown-panel">
+                        <ul data-group="tile">
+                            <li><span class="checkbox checked tracked" data-value="1">Small Tiles</span></li>
+                            <li><span class="checkbox tracked" data-value="2">Large Tiles</span></li>
+                        </ul>
+                    </div>
+                    <div id="borders-ctrl" class="dropdown-panel">
+                        <ul>
+                            <li>&nbsp;&nbsp;Size:&nbsp;&nbsp;<input id="border-size" type="number" value="0" min="0" max="100"></li>
+                            <li>Color:&nbsp;&nbsp;<input id="border-color" type="color" value="#ffffff"></li>
+                        </ul>
+                    </div>
+                    <div id="filters-ctrl" class="dropdown-panel">
+                        <ul data-group="filters">
+                            <li><span class="checkbox checked tracked" data-value="none">None</span></li>
+                            <li><span class="checkbox tracked" data-value="grayscale">Grayscale</span></li>
+                            <li><span class="checkbox tracked" data-value="invert">Invert</span></li>
+                            <li><span class="checkbox tracked" data-value="threshold">Threshold</span></li>
+                            <li><span class="checkbox tracked" data-value="cool">Cool</span></li>
+                            <li><span class="checkbox tracked" data-value="warm">Warm</span></li>
+                            <li><span class="checkbox tracked" data-value="mint">Mint</span></li>
+                            <li><span class="checkbox tracked" data-value="classic">Classic</span></li>
+                            <li><span class="checkbox tracked" data-value="gloom">Gloom</span></li>
+                            <li><span class="checkbox tracked" data-value="sunny">Sunny</span></li>
+                        </ul>
+                    </div>
+                </section>
+            </header>
+            <section class="images">
+                <div id="images-container">
+                    <div id="noImages" style="display:none">
+                        <h2>PinCo now supports even more websites, not only Pinterest. You can navigate to almost any website which contains images and press the PC-button in the top right corner of Chrome in order to create a collage.</h2>
+
+                        <h2>Unfortunately exactly this page is not supported. Please close this tab and try on another page like <a href="http://pinterest.com" class="tracked" target="_blank">Pinterest&trade;</a> or <a href="http://behance.com" class="tracked" target="_blank">Behance&trade;</a>.</h2>
+
+                        <div>Maybe the page has no images in a sufficient quality or it has encoded them in a strange format.</div>
+
+                        <h3>The team of PinCo is working on supporting soon every website available! Check again!</h3>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="progress">
+                <div id="progress-bar"></div>
+            </section>
+        </div>
+        <div class="canvas-block">
+            <canvas id="cnv"></canvas>
+        </div>
+        <a id="img-download" href="#" download="pinco.jpeg">Download</a>
+        <footer>
+            <span data-icon="&#xe006;">Drag the pictures to reposition them, and use the mouse wheel to zoom in and out.</span><br/>
+            <div id='premium'><a href="#" onclick="function(){}" class="tracked" target="oneDollar"><strong>Buy the PinCo PREMIUM version with more canvas patterns, filters, higher quality, no more 'PinCo' watermark and more... for just 1$.</strong></a> </div>
+            <span>If you have any questions or wishes, do not hesitate to send me an email at <a href="mailto:jan@malahov.eu">jan@malahov.eu</a>.</span><br/>
+            <!--iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fpin-collage.com&amp;send=false&amp;layout=standard&amp;width=225&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=28&amp;appId=222522781212969" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:225px; height:28px;" allowTransparency="true"></iframe-->
+        </footer>
+        <!--
+        <footer>
+            <h5>
+                <div class="tip">
+                    TIP: Suprise your friends and family with PinCo Posters. Hang your own Pinterest board in your room. Get a physical PinCo Collage at <a href="http://www.zazzle.com/?rf=238006609450014592" target="_blank">Zazzle's printing service</a>!
+                </div>
+            </h5>
+        </footer>
+        <footer>
+            <h5>
+                <a href="http://www.zazzle.com/?rf=238006609450014592" target="_blank"><img src="home_10.gif" width="141" height="57" alt="In association with Zazzle.com"></a>
+            </h5>
+        </footer>
+        -->
+
+        <script type="text/javascript" src="scripts/vendor/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/vendor/underscore-min.js"></script>
+		<!-- build:js scripts/vendor/spectrum.js -->
+		<script type="text/javascript" src="scripts/vendor/spectrum.js"></script>
+
+        <script src="scripts/tracking2.js"></script>
+
+		<!-- endbuild -->
+        <!-- build:js scripts/scripts.js -->
+        <script type="text/javascript" src="scripts/scrollable.js"></script>
+        <script type="text/javascript" src="scripts/board.js"></script>
+        <script type="text/javascript" src="scripts/boardDrawer.js"></script>
+        <script type="text/javascript" src="scripts/filters.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

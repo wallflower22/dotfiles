@@ -1,0 +1,18 @@
+{
+   "author": "Mark Carver",
+   "content_scripts": [ {
+      "js": [ "dreditor.js" ],
+      "matches": [ "*://*.drupal.org/*", "*://*.dreditor.org/*", "*://*.devdrupal.org/*" ]
+   } ],
+   "description": "An extension for Drupal.org that enhances user experience and functionality. Original author: Daniel F. Kudwien (sun).",
+   "homepage_url": "https://dreditor.org",
+   "icons": {
+      "128": "icon.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCwGqyJNqSmeuFQ2zPJQmrTyn3a3HWXmp0L4W5ojpsb+JIS5Q9JoKQF98ypchdDwNFJcllJw7DFIBohmOJwrc9mmG0sUXyPpQRSl0epnwTJXaA2zgfkrp8Pqr8QcihIjM+9fOJa3zpjosY7rTido+z8gAjPJALPPpma872lmHreTwIDAQAB",
+   "manifest_version": 2,
+   "name": "Dreditor",
+   "permissions": [ "*://*.drupal.org/*", "*://*.dreditor.org/*", "*://*.devdrupal.org/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2.14"
+}
