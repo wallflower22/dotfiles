@@ -43,11 +43,4 @@ alias fish-local "vim ~/.oh-my-fish/custom/fish-tplcom.load"
 alias fish-config "vim ~/.config/fish/config.fish"
 alias vim-local "vim ~/.vimrc.local"
 
-# Aliases live servers
-alias docean "ssh root@188.166.49.19"
-alias komotini 'ssh komotinipaper@komotinipaper.gr -t "cd public_html; bash"'
-alias tplcom "ssh tplcom@server27.cretaforce.gr"
-alias delta "ssh deltapi@server24.cretaforce.gr -t 'cd delta-pi-systems.eu/store; bash'"
-alias stuhrling "ssh watches@server24.cretaforce.gr -t 'cd stuhrling.eu/www; bash'"
-alias timexperts "ssh timexper@173.236.60.18 -t 'cd public_html/timexperts; bash'"
 
